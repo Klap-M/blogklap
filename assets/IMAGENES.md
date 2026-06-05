@@ -12,7 +12,8 @@ assets/images/
 └── posts/
     ├── diversificar-metodos-de-pago.webp
     ├── pagos-tarjeta.webp
-    └── medios-de-pago-chile.webp
+    ├── medios-de-pago-chile.webp
+    └── segundo-local-crecer-negocio.png
 ```
 
 ## Cómo obtener las imágenes desde klap.cl
