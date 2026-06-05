@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Pagos con tarjeta">
+  <rect width="1200" height="675" fill="#002b49"/>
+  <rect x="0" y="600" width="1200" height="75" fill="#26d07c" opacity="0.3"/>
+  <text x="600" y="320" text-anchor="middle" fill="#f8f9fa" font-family="Arial,sans-serif" font-size="42" font-weight="700">Pagos con tarjeta</text>
+  <text x="600" y="380" text-anchor="middle" fill="#26d07c" font-family="Arial,sans-serif" font-size="24">Reemplazar con imagen en assets/images/posts/</text>
+</svg>

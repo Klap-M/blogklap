@@ -1,0 +1,22 @@
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs y caché
+*.log
+.cache/
+
+# Entorno local (por si se agrega tooling después)
+node_modules/
+.env
+.env.local
+
+# Vercel
+.vercel
