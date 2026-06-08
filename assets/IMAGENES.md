@@ -15,7 +15,8 @@ assets/images/
     ├── medios-de-pago-chile.webp
     ├── segundo-local-crecer-negocio.png
     ├── que-es-un-pos.png
-    └── elegir-mejor-maquina-pos.png
+    ├── elegir-mejor-maquina-pos.png
+    └── pagos-online-vs-presenciales.png
 ```
 
 ## Cómo obtener las imágenes desde klap.cl
