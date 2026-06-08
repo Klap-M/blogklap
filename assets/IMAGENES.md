@@ -13,7 +13,8 @@ assets/images/
     ├── diversificar-metodos-de-pago.webp
     ├── pagos-tarjeta.webp
     ├── medios-de-pago-chile.webp
-    └── segundo-local-crecer-negocio.png
+    ├── segundo-local-crecer-negocio.png
+    └── que-es-un-pos.png
 ```
 
 ## Cómo obtener las imágenes desde klap.cl
