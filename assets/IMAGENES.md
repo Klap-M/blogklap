@@ -10,7 +10,7 @@ assets/images/
 │   ├── klap-logo.svg          ← Placeholder incluido (reemplazar por PNG oficial)
 │   └── klap-logo.png          ← Logo oficial (descargar manualmente)
 └── posts/
-    ├── diversificar-metodos-de-pago.webp
+    ├── diversificar-metodos-de-pago.png
     ├── pagos-tarjeta.webp
     ├── medios-de-pago-chile.webp
     ├── segundo-local-crecer-negocio.png
