@@ -114,6 +114,15 @@
     position: relative;
     z-index: 2;
     padding: 2rem var(--gutter);
+    margin-left: 0;
+    margin-right: auto;
+    text-align: left;
+  }
+
+  .hero__badge,
+  .hero__title,
+  .hero__subtitle {
+    text-align: left;
   }
 
   .hero__badge {
