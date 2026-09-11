@@ -81,9 +81,11 @@
   .hero__content {
     position: relative;
     z-index: 2;
-    padding: 3.5rem 0 3.5rem calc(var(--gutter) + 1rem);
-    max-width: 520px;
-    margin-right: auto;
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 3.5rem var(--gutter);
+    padding-left: calc(var(--gutter) + 0.5rem);
     text-align: left;
   }
 
@@ -91,6 +93,7 @@
   .hero__title,
   .hero__subtitle {
     text-align: left;
+    max-width: 520px;
   }
 
   .hero__badge {
