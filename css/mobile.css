@@ -113,8 +113,7 @@
   .hero__content {
     position: relative;
     z-index: 2;
-    padding: 2rem var(--gutter);
-    margin-left: 0;
+    padding: 2rem var(--gutter) 2rem calc(var(--gutter) + 0.75rem);
     margin-right: auto;
     text-align: left;
   }
