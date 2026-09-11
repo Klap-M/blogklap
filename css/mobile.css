@@ -521,6 +521,9 @@
   .actor-card__name { font-size: 0.875rem; font-weight: 700; margin-bottom: 0.25rem; }
   .actor-card__desc { font-size: 0.8125rem; color: var(--color-text-muted); line-height: 1.5; }
 
+  .actors-grid--cases .actor-card { text-align: left; }
+  .actors-grid--cases .actor-card__icon { margin-left: 0; }
+
   .payment-item { display: flex; gap: 0.75rem; background: var(--color-bg); }
 
   .payment-item__icon {

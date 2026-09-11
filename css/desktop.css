@@ -395,6 +395,22 @@
   .actor-card__name { font-size: 0.9375rem; font-weight: 700; margin-bottom: 0.375rem; }
   .actor-card__desc { font-size: 0.875rem; color: var(--color-text-muted); line-height: 1.55; }
 
+  .actors-grid--cases {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+
+  .actors-grid--cases .actor-card {
+    text-align: left;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+
+  .actors-grid--cases .actor-card:hover {
+    border-color: var(--color-primary-light);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .actors-grid--cases .actor-card__icon { margin-left: 0; }
+
   .payment-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
