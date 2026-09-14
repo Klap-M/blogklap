@@ -564,6 +564,11 @@
   .flip-grid { grid-template-columns: 1fr; }
   .cash-timeline__days { grid-template-columns: repeat(4, minmax(0, 1fr)); }
   .faq-item summary { font-size: 0.9375rem; min-height: 48px; }
+  .benefit-grid { grid-template-columns: 1fr; }
+  .ba-cards { grid-template-columns: 1fr; }
+  .ba-card__split { grid-template-columns: 1fr; }
+  .store-map__canvas { min-height: 320px; }
+  .hotspot { width: 36px; height: 36px; min-width: 36px; min-height: 36px; }
 
   /* ── TAGS ── */
   .tags {

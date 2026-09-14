@@ -503,6 +503,23 @@
   .quota-visual { padding: 1.75rem; }
   .flip-grid { grid-template-columns: repeat(3, 1fr); }
   .cash-timeline { grid-template-columns: 1fr; }
+  .benefit-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+  .benefit-card {
+    padding: 1.5rem 1.5rem 1.75rem;
+    min-height: 200px;
+    transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+  }
+  .benefit-card:hover {
+    border-color: var(--color-accent);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+  }
+  .benefit-card:hover .benefit-card__num { opacity: 0.12; }
+  .benefit-card__title { font-size: 1.0625rem; }
+  .benefit-card__text { font-size: 0.875rem; }
+  .ba-cards { grid-template-columns: repeat(2, 1fr); gap: 1.25rem; }
+  .ba-card { transition: box-shadow 0.2s, transform 0.2s; }
+  .ba-card:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
 
   /* ── TAGS ── */
   .tags {

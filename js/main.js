@@ -180,3 +180,41 @@
     });
   });
 })();
+
+/**
+ * Mapa del local con hotspots (Multiservicios)
+ */
+(function () {
+  var map = document.querySelector('[data-store-map]');
+  if (!map) return;
+
+  var buttons = map.querySelectorAll('[data-hotspot]');
+  var panels = map.querySelectorAll('[data-hotspot-panel]');
+
+  function activate(id) {
+    buttons.forEach(function (button) {
+      var on = button.getAttribute('data-hotspot') === id;
+      button.classList.toggle('is-active', on);
+      button.setAttribute('aria-expanded', on ? 'true' : 'false');
+    });
+
+    panels.forEach(function (panel) {
+      var on = panel.getAttribute('data-hotspot-panel') === id;
+      panel.hidden = !on;
+    });
+  }
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      activate(button.getAttribute('data-hotspot'));
+    });
+    button.addEventListener('mouseenter', function () {
+      activate(button.getAttribute('data-hotspot'));
+    });
+    button.addEventListener('focus', function () {
+      activate(button.getAttribute('data-hotspot'));
+    });
+  });
+
+  activate('1');
+})();
