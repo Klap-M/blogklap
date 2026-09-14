@@ -1571,6 +1571,7 @@ img.placeholder-cover { object-position: 68% center; }
   background: var(--color-bg-dark);
   color: #fff;
   font-family: "Montserrat", sans-serif;
+  font-weight: 700;
 }
 
 .site-footer a {
@@ -1596,6 +1597,7 @@ img.placeholder-cover { object-position: 68% center; }
 
 .site-footer__heading {
   border-bottom: 2px solid #fff;
+  color: #c5ced6;
   font-size: 0.9375rem;
   font-weight: 700;
   line-height: 1.4;
@@ -1619,7 +1621,7 @@ img.placeholder-cover { object-position: 68% center; }
 }
 
 .site-footer__row a {
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .site-footer__whatsapp {
@@ -1635,7 +1637,7 @@ img.placeholder-cover { object-position: 68% center; }
 
 .site-footer__hours {
   font-size: 0.8125rem;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.35;
   margin: 0.75rem 0 0;
   max-width: 16.5rem;
@@ -1654,7 +1656,7 @@ img.placeholder-cover { object-position: 68% center; }
 }
 
 .site-footer__legal {
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
   font-weight: 400;
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.78);
