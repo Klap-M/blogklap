@@ -634,6 +634,11 @@
   .prose table { font-size: 0.8125rem; }
 }
 
+.post-card__image img.placeholder-cover,
+.article-featured-image img.placeholder-cover {
+  object-position: 68% center;
+}
+
 /* Safe area iPhone */
 @media (max-width: 767px) {
   @supports (padding: max(0px)) {

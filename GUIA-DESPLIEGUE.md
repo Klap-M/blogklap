@@ -203,8 +203,8 @@ Si **no puedes subir fotos a klap.cl**, no pasa nada. El blog ya está preparado
 
 **Flujo:**
 
-1. Guarda la imagen en `assets/images/posts/nombre-articulo.webp`
-2. Referencia en HTML: `assets/images/posts/nombre-articulo.webp`
+1. Si el post **no tiene foto**, usa `assets/images/brand/portada-placeholder.jpg` con `class="placeholder-cover"`
+2. Si hay foto propia, guárdala en `assets/images/posts/nombre-articulo.webp` y referencia esa ruta
 3. `git add` → `git commit` → `git push` → Vercel publica automáticamente
 
 Guía detallada de nombres y tamaños: **`assets/IMAGENES.md`**
@@ -259,7 +259,7 @@ Busca y reemplaza `blogklap.vercel.app` por tu dominio real en:
 ```
 Agrega un nuevo post al blog Klap siguiendo la estructura de
 posts/diversificar-metodos-de-pago.html. Título: [TITULO].
-Contenido: [PEGAR TEXTO]. Imagen local: assets/images/posts/nombre.webp. Fecha: [FECHA].
+Contenido: [PEGAR TEXTO]. Si no hay foto, usa assets/images/brand/portada-placeholder.jpg con class="placeholder-cover". Fecha: [FECHA].
 Actualiza index.html y la sección de blogs relacionados en los otros posts.
 ```
 

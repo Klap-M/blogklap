@@ -11,6 +11,7 @@ Guía de dimensiones para exportar fotos **desktop** y **mobile**, basada en el 
 | Archivo local | viewBox / ratio | Estado | Uso previsto |
 |---------------|-----------------|--------|--------------|
 | `assets/images/brand/klap-logo.svg` | 120 × 34 (~3.5:1) | Placeholder | Header + footer |
+| `assets/images/brand/portada-placeholder.jpg` | 1024 × 249 (~4.1:1) | **Default** | Hero/card/OG si el post no tiene foto |
 | `assets/images/posts/diversificar-metodos-de-pago.svg` | 1200 × 675 (16:9) | Placeholder | Post 1 |
 | `assets/images/posts/pagos-tarjeta.svg` | 1200 × 675 (16:9) | Placeholder | Post 2 |
 | `assets/images/posts/medios-de-pago-chile.svg` | 1200 × 675 (16:9) | Placeholder | Post 3 |

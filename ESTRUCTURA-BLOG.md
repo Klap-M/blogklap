@@ -458,6 +458,7 @@ En `<img src>` de cards/hero se añade `?t=TIMESTAMP` cache-bust opcional.
 
 | Método | Cómo |
 |--------|------|
+| **Portada placeholder** | `assets/images/brand/portada-placeholder.jpg` + `class="placeholder-cover"` (default si no hay foto) |
 | **Link externo** | Pegar URL en `src="https://..."` (Cloudinary, ImgBB, etc.) |
 | **Carpeta local** | Guardar en `assets/images/posts/` y usar ruta relativa |
 | **Link klap existente** | Usar URL aunque no puedas subir nuevas (solo referenciar) |
@@ -518,7 +519,7 @@ Ver también: `assets/IMAGENES.md`
    - JSON-LD BlogPosting
 
 3. **Actualizar hero:**
-   - Imagen de fondo
+   - Imagen de fondo. Si no hay foto, usar `assets/images/brand/portada-placeholder.jpg` con `class="placeholder-cover"`
    - Breadcrumb (último segmento = título corto)
    - Categoría, H1, fecha
 
@@ -596,7 +597,8 @@ Archivo: posts/[slug].html
 Título: [TITULO COMPLETO]
 Categoría: [Medios de pago / Fintech / etc.]
 Fecha: [YYYY-MM-DD]
-Imagen hero (URL): [URL]
+Imagen hero (URL): [URL o vacío]
+Si no hay imagen, usa assets/images/brand/portada-placeholder.jpg con class="placeholder-cover" en hero, card, destacada y og:image.
 Contenido:
 
 [PEGAR TEXTO AQUÍ]

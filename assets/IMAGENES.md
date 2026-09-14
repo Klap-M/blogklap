@@ -7,8 +7,10 @@ Si **no puedes subir fotos a klap.cl**, guarda todo aquí. Vercel las publica au
 ```
 assets/images/
 ├── brand/
-│   ├── klap-logo.svg          ← Placeholder incluido (reemplazar por PNG oficial)
-│   └── klap-logo.png          ← Logo oficial (descargar manualmente)
+│   ├── klap-logo.svg              ← Placeholder incluido (reemplazar por PNG oficial)
+│   ├── klap-logo.png              ← Logo oficial (descargar manualmente)
+│   ├── portada-blog.png           ← Banner del home
+│   └── portada-placeholder.jpg    ← Portada por defecto si el post no tiene foto
 └── posts/
     ├── diversificar-metodos-de-pago.png
     ├── pagos-tarjeta.webp
@@ -31,6 +33,24 @@ assets/images/
 | `posts/diversificar-metodos-de-pago.webp` | https://www.klap.cl/documents/35879/1203994/diversificar-metodos-de-pago-desk.webp/44ac0611-190c-777d-4565-b5d94a8f7903 |
 | `posts/pagos-tarjeta.webp` | https://www.klap.cl/documents/35879/1203970/como-funcionan-las-ventas-con+tarjeta-desk.webp/f42c126a-b8ba-d3c4-cb8e-4e3ac1bd72a4 |
 | `posts/medios-de-pago-chile.webp` | https://www.klap.cl/documents/35879/1203946/medios_de_pago_en_chile-desk.webp/11517769-b59d-31d3-53d3-5a63ff9b71fd |
+
+## Portada placeholder por defecto
+
+Si un artículo **aún no tiene foto propia**, usa esta imagen en hero, card, destacada y Open Graph:
+
+`assets/images/brand/portada-placeholder.jpg` (1024 × 249, JPG)
+
+Añade `class="placeholder-cover"` al `<img>` para recortar hacia el personaje en las tarjetas 16:9.
+
+```html
+<!-- Desde index.html -->
+<img class="placeholder-cover" src="assets/images/brand/portada-placeholder.jpg" alt="Descripción del artículo" width="1024" height="249" loading="lazy">
+
+<!-- Desde posts/mi-post.html -->
+<img class="placeholder-cover" src="../assets/images/brand/portada-placeholder.jpg" alt="Descripción del artículo" width="1024" height="249" loading="lazy">
+```
+
+Cuando exista la foto definitiva, reemplaza esa ruta por `assets/images/posts/nombre-del-post.webp` y quita la clase `placeholder-cover`.
 
 ## Imágenes nuevas para posts futuros
 

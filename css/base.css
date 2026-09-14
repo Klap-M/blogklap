@@ -163,3 +163,6 @@ button { font-family: inherit; cursor: pointer; }
 .post-card__title a:hover { color: var(--color-primary); }
 .post-card__read-more { text-decoration: none; }
 .post-card__read-more:hover { text-decoration: underline; }
+
+/* Portada placeholder (1024×249): recorta hacia el personaje en cards 16:9 */
+img.placeholder-cover { object-position: 68% center; }

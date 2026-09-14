@@ -500,6 +500,14 @@
   .site-footer__links a { color: rgba(255,255,255,0.7); font-size: 0.875rem; }
   .site-footer__links a:hover { color: #fff; }
   .site-footer__copy { font-size: 0.8125rem; opacity: 0.5; text-align: center; padding-top: 2rem; margin-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1); }
+
+  .post-card__image img.placeholder-cover {
+    object-position: 68% center;
+  }
+
+  .article-hero__image img.placeholder-cover {
+    object-position: center center;
+  }
 }
 
 /* Desktop wide — sidebar TOC */
