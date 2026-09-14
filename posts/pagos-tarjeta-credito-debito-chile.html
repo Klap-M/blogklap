@@ -25,19 +25,19 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/base.css?v=7">
-  <link rel="stylesheet" href="../css/mobile.css?v=7">
-  <link rel="stylesheet" href="../css/desktop.css?v=7">
+  <link rel="stylesheet" href="../css/base.css?v=18">
+  <link rel="stylesheet" href="../css/mobile.css?v=18">
+  <link rel="stylesheet" href="../css/desktop.css?v=18">
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "BlogPosting",
+    "@type": "Article",
     "headline": "¿Cómo funcionan los pagos con tarjeta de crédito y débito en Chile?",
     "description": "Descubre paso a paso qué sucede desde que un cliente acerca su tarjeta al POS hasta el mensaje de pago aprobado.",
     "image": "assets/images/posts/pagos-tarjeta-credito-debito-chile.png",
     "datePublished": "2025-10-01",
-    "dateModified": "2026-06-19",
+    "dateModified": "2026-09-14",
     "author": { "@type": "Organization", "name": "Klap", "url": "https://www.klap.cl" },
     "publisher": { "@type": "Organization", "name": "Klap", "url": "https://www.klap.cl" },
     "mainEntityOfPage": {
@@ -46,8 +46,60 @@
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Quiénes intervienen en una transacción con tarjeta?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "El cliente (tarjetahabiente), el comercio, el banco emisor, el adquirente (como Klap, que provee el POS y procesa la transacción) y las marcas de tarjeta (Visa, Mastercard, etc.)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué ocurre en los segundos entre acercar la tarjeta y el pago aprobado?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "El POS lee la información encriptada de la tarjeta. El adquirente envía una solicitud de autorización al banco emisor. El banco verifica validez, fondos o cupo y si la transacción parece legítima, y responde Aprobada o Rechazada. El POS muestra la confirmación."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿El dinero llega a mi cuenta al instante?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Aunque la venta se aprueba en segundos, el dinero no se transfiere instantáneamente. Al final del día el adquirente presenta las transacciones a los bancos emisores y, tras conciliar, deposita los fondos descontando la comisión. Este proceso generalmente toma entre 24 y 48 horas hábiles."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cuál es la diferencia entre débito y crédito para mi negocio?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "En débito el dinero sale de la cuenta bancaria del cliente, las comisiones son generalmente más bajas y el riesgo para el comercio es menor. En crédito se usa una línea de crédito del banco, las comisiones son generalmente más altas, el riesgo es mayor (el banco asume el cobro) y hay opción de cuotas. El proceso en el POS es idéntico."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué verifica el banco emisor antes de aprobar?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Si la tarjeta es válida y no está reportada como robada; si la cuenta tiene fondos suficientes (débito) o línea de crédito disponible (crédito); y si la transacción parece legítima según sus algoritmos de seguridad."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
+
+  <div class="reading-progress" role="progressbar" aria-label="Progreso de lectura" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+    <div class="reading-progress__bar"></div>
+  </div>
 
   <header class="site-header" role="banner">
     <div class="container site-header__inner">
@@ -70,7 +122,7 @@
     </div>
   </header>
 
-  <article itemscope itemtype="https://schema.org/BlogPosting">
+  <article itemscope itemtype="https://schema.org/Article">
     <header class="article-hero">
       <div class="article-hero__image" aria-hidden="true">
         <img
@@ -119,10 +171,12 @@
         <p class="toc__title">Contenido</p>
         <ol>
           <li><a href="#introduccion">Introducción</a></li>
+          <li><a href="#puntos-clave">Puntos clave</a></li>
           <li><a href="#protagonistas">Los protagonistas</a></li>
           <li><a href="#viaje-pago">El viaje de un pago</a></li>
           <li><a href="#liquidacion">Proceso de liquidación</a></li>
           <li><a href="#debito-vs-credito">Débito vs. Crédito</a></li>
+          <li><a href="#preguntas-frecuentes">Preguntas frecuentes</a></li>
         </ol>
         </div>
       </aside>
@@ -133,6 +187,48 @@
           <p class="lead">Aceptar pagos con tarjeta es un paso esencial para cualquier negocio. Pero, ¿alguna vez te has preguntado qué sucede realmente en los pocos segundos que transcurren desde que un cliente acerca su tarjeta a tu máquina POS hasta que ves el mensaje de "pago aprobado"?</p>
 
           <p>Ese proceso, aunque parece mágico, es una coreografía tecnológica perfectamente sincronizada entre varios actores. Entender cómo funciona no solo es interesante, sino que te ayuda a comprender mejor tu negocio, los costos asociados y la importancia de contar con un buen socio de pagos.</p>
+        </section>
+
+        <section id="puntos-clave">
+          <h2>Lo que debes llevarte de esta guía</h2>
+          <div class="takeaways">
+            <article class="takeaway-card">
+              <span class="takeaway-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><path d="M3 20c.8-3 3.2-5 6-5s5.2 2 6 5"/><path d="M16 8h5M18.5 5.5v5"/></svg>
+              </span>
+              <div>
+                <p class="takeaway-card__title">Varios actores, un pago</p>
+                <p class="takeaway-card__text">Cliente, comercio, banco emisor, adquirente y marcas de tarjeta coordinan la transacción en segundos.</p>
+              </div>
+            </article>
+            <article class="takeaway-card">
+              <span class="takeaway-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+              </span>
+              <div>
+                <p class="takeaway-card__title">Autorización en segundos</p>
+                <p class="takeaway-card__text">El POS pregunta al banco emisor si hay fondos o cupo. La respuesta —aprobada o rechazada— vuelve al adquirente y a tu pantalla.</p>
+              </div>
+            </article>
+            <article class="takeaway-card">
+              <span class="takeaway-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 5-3.5 8.5-7 9-3.5-.5-7-4-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+              </span>
+              <div>
+                <p class="takeaway-card__title">El dinero no es instantáneo</p>
+                <p class="takeaway-card__text">La venta se aprueba al tiro, pero la liquidación generalmente toma entre 24 y 48 horas hábiles.</p>
+              </div>
+            </article>
+            <article class="takeaway-card">
+              <span class="takeaway-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M7 10h.01M11 10h.01M15 10h.01M7 14h4"/></svg>
+              </span>
+              <div>
+                <p class="takeaway-card__title">Débito y crédito no pesan igual</p>
+                <p class="takeaway-card__text">Comisiones generalmente más bajas y menor riesgo en débito; en crédito, cuotas que incentivan compras de mayor valor.</p>
+              </div>
+            </article>
+          </div>
         </section>
 
         <section id="protagonistas">
@@ -260,15 +356,132 @@
           <h2>¿Y el dinero? El proceso de liquidación</h2>
           <p>Aunque la venta se aprueba en segundos, el dinero no se transfiere instantáneamente a tu cuenta.</p>
 
-          <div class="callout callout--info">
-            <p class="callout__title">ℹ️ ¿Qué es la liquidación?</p>
-            <p>Al final del día, tu adquirente (Klap) recopila todas tus transacciones aprobadas y las presenta a los respectivos bancos emisores para solicitar el pago. Luego de conciliar estos pagos, el adquirente deposita los fondos en tu cuenta bancaria, descontando la comisión por el servicio. Este proceso generalmente toma entre <strong>24 y 48 horas hábiles</strong>.</p>
+          <div class="alert alert--warning" role="note">
+            <span class="alert__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4M12 17h.01"/><path d="M10.3 4.9L2.8 18a2 2 0 001.7 3h15a2 2 0 001.7-3L13.7 4.9a2 2 0 00-3.4 0z"/></svg>
+            </span>
+            <div>
+              <p class="alert__title">¿Qué es la liquidación?</p>
+              <p class="alert__text">Al final del día, tu adquirente (Klap) recopila todas tus transacciones aprobadas y las presenta a los respectivos bancos emisores para solicitar el pago. Luego de conciliar estos pagos, el adquirente deposita los fondos en tu cuenta bancaria, descontando la comisión por el servicio. Este proceso generalmente toma entre <strong>24 y 48 horas hábiles</strong>.</p>
+            </div>
           </div>
         </section>
 
         <section id="debito-vs-credito">
           <h2>Débito vs. Crédito: ¿Cuál es la diferencia para tu negocio?</h2>
           <p>Si bien para el cliente la diferencia es clara (uno usa sus fondos propios y el otro un préstamo), para tu negocio también hay matices:</p>
+
+          <div class="compare-flow" role="group" aria-label="Comparación entre tarjeta de débito y tarjeta de crédito">
+            <article class="compare-flow__col compare-flow__col--bright">
+              <span class="compare-flow__badge compare-flow__badge--good">Débito</span>
+              <h3>Tarjeta de débito</h3>
+              <p class="compare-flow__lead">El cliente usa sus fondos propios. El proceso en el POS es idéntico para el comercio.</p>
+              <ol class="compare-flow__steps">
+                <li>
+                  <span class="compare-flow__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="28" height="28"><circle cx="12" cy="12" r="12" fill="#16a34a"/><path d="M7 12.5l3 3 7-7" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                  <div>
+                    <strong>Origen del dinero</strong>
+                    <span>Cuenta bancaria del cliente</span>
+                  </div>
+                </li>
+                <li>
+                  <span class="compare-flow__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="28" height="28"><circle cx="12" cy="12" r="12" fill="#16a34a"/><path d="M7 12.5l3 3 7-7" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                  <div>
+                    <strong>Verificación</strong>
+                    <span>Fondos disponibles en la cuenta</span>
+                  </div>
+                </li>
+                <li>
+                  <span class="compare-flow__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="28" height="28"><circle cx="12" cy="12" r="12" fill="#16a34a"/><path d="M7 12.5l3 3 7-7" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                  <div>
+                    <strong>Comisiones para el comercio</strong>
+                    <span>Generalmente más bajas</span>
+                  </div>
+                </li>
+                <li>
+                  <span class="compare-flow__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="28" height="28"><circle cx="12" cy="12" r="12" fill="#16a34a"/><path d="M7 12.5l3 3 7-7" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                  <div>
+                    <strong>Riesgo para el comercio</strong>
+                    <span>Menor</span>
+                  </div>
+                </li>
+                <li>
+                  <span class="compare-flow__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="28" height="28"><circle cx="12" cy="12" r="12" fill="#dc2626"/><path d="M8 8l8 8M16 8l-8 8" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/></svg>
+                  </span>
+                  <div>
+                    <strong>Opción de cuotas</strong>
+                    <span>No aplica</span>
+                  </div>
+                </li>
+              </ol>
+              <p class="compare-flow__result">Resultado: proceso idéntico en el POS, con comisión generalmente más baja y menor riesgo.</p>
+            </article>
+
+            <div class="compare-flow__vs" aria-hidden="true">vs</div>
+
+            <article class="compare-flow__col compare-flow__col--bright">
+              <span class="compare-flow__badge compare-flow__badge--good">Crédito</span>
+              <h3>Tarjeta de crédito</h3>
+              <p class="compare-flow__lead">El cliente usa un préstamo del banco. El proceso en el POS es idéntico para el comercio.</p>
+              <ol class="compare-flow__steps">
+                <li>
+                  <span class="compare-flow__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="28" height="28"><circle cx="12" cy="12" r="12" fill="#16a34a"/><path d="M7 12.5l3 3 7-7" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                  <div>
+                    <strong>Origen del dinero</strong>
+                    <span>Línea de crédito del banco (préstamo)</span>
+                  </div>
+                </li>
+                <li>
+                  <span class="compare-flow__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="28" height="28"><circle cx="12" cy="12" r="12" fill="#16a34a"/><path d="M7 12.5l3 3 7-7" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                  <div>
+                    <strong>Verificación</strong>
+                    <span>Cupo de crédito disponible</span>
+                  </div>
+                </li>
+                <li>
+                  <span class="compare-flow__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="28" height="28"><circle cx="12" cy="12" r="12" fill="#dc2626"/><path d="M8 8l8 8M16 8l-8 8" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/></svg>
+                  </span>
+                  <div>
+                    <strong>Comisiones para el comercio</strong>
+                    <span>Generalmente más altas</span>
+                  </div>
+                </li>
+                <li>
+                  <span class="compare-flow__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="28" height="28"><circle cx="12" cy="12" r="12" fill="#dc2626"/><path d="M8 8l8 8M16 8l-8 8" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/></svg>
+                  </span>
+                  <div>
+                    <strong>Riesgo para el comercio</strong>
+                    <span>Mayor (el banco asume el riesgo de cobro)</span>
+                  </div>
+                </li>
+                <li>
+                  <span class="compare-flow__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="28" height="28"><circle cx="12" cy="12" r="12" fill="#16a34a"/><path d="M7 12.5l3 3 7-7" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                  <div>
+                    <strong>Opción de cuotas</strong>
+                    <span>Sí — incentiva compras de mayor valor</span>
+                  </div>
+                </li>
+              </ol>
+              <p class="compare-flow__result">Resultado: proceso idéntico en el POS, con comisión generalmente más alta y opción de cuotas.</p>
+            </article>
+          </div>
 
           <div class="table-wrapper">
             <table>
@@ -315,7 +528,66 @@
             </table>
           </div>
 
+          <div class="metric-bars" data-metric-bars>
+            <p class="metric-bars__title">Comisión relativa según el artículo (cualitativo, no una tasa de mercado)</p>
+            <div class="metric-bar">
+              <div class="metric-bar__head"><span>Comisión débito</span><span class="metric-bar__value">más baja</span></div>
+              <div class="metric-bar__track"><span class="metric-bar__fill" style="--bar: 40%"></span></div>
+              <p class="metric-bar__hint">El texto indica que las comisiones de débito son generalmente más bajas. La barra es énfasis visual, no un porcentaje publicado.</p>
+            </div>
+            <div class="metric-bar">
+              <div class="metric-bar__head"><span>Comisión crédito</span><span class="metric-bar__value">más alta</span></div>
+              <div class="metric-bar__track"><span class="metric-bar__fill" style="--bar: 75%"></span></div>
+              <p class="metric-bar__hint">El texto indica que las comisiones de crédito son generalmente más altas. No representa una tarifa real de adquirente.</p>
+            </div>
+          </div>
+
           <p>Entender este flujo te da poder como comerciante. Te permite valorar la tecnología que tienes en tus manos y la importancia de elegir un adquirente como <strong>Klap</strong>, que garantice transacciones rápidas, seguras y un proceso de liquidación transparente para que tu dinero llegue a tiempo.</p>
+        </section>
+
+        <section id="preguntas-frecuentes">
+          <h2>Preguntas frecuentes sobre pagos con tarjeta en Chile</h2>
+          <div class="faq">
+            <details class="faq-item">
+              <summary>¿Quiénes intervienen en una transacción con tarjeta?</summary>
+              <div class="faq-item__answer">
+                <p>El cliente (tarjetahabiente), el comercio, el banco emisor, el adquirente (como Klap, que provee el POS y procesa la transacción) y las marcas de tarjeta (Visa, Mastercard, etc.).</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>¿Qué ocurre en los segundos entre acercar la tarjeta y el pago aprobado?</summary>
+              <div class="faq-item__answer">
+                <p>El POS lee la información encriptada de la tarjeta. El adquirente envía una solicitud de autorización al banco emisor. El banco verifica validez, fondos o cupo y si la transacción parece legítima, y responde Aprobada o Rechazada. El POS muestra la confirmación.</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>¿El dinero llega a mi cuenta al instante?</summary>
+              <div class="faq-item__answer">
+                <p>No. Aunque la venta se aprueba en segundos, el dinero no se transfiere instantáneamente. Al final del día el adquirente presenta las transacciones a los bancos emisores y, tras conciliar, deposita los fondos descontando la comisión. Este proceso generalmente toma entre 24 y 48 horas hábiles.</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>¿Cuál es la diferencia entre débito y crédito para mi negocio?</summary>
+              <div class="faq-item__answer">
+                <p>En débito el dinero sale de la cuenta bancaria del cliente, las comisiones son generalmente más bajas y el riesgo para el comercio es menor. En crédito se usa una línea de crédito del banco, las comisiones son generalmente más altas, el riesgo es mayor (el banco asume el cobro) y hay opción de cuotas. El proceso en el POS es idéntico.</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>¿Qué verifica el banco emisor antes de aprobar?</summary>
+              <div class="faq-item__answer">
+                <p>Si la tarjeta es válida y no está reportada como robada; si la cuenta tiene fondos suficientes (débito) o línea de crédito disponible (crédito); y si la transacción parece legítima según sus algoritmos de seguridad.</p>
+              </div>
+            </details>
+          </div>
+
+          <div class="article-cta">
+            <p class="article-cta__title">¿Quieres un adquirente con liquidación transparente?</p>
+            <p class="article-cta__text">Klap procesa la transacción en tu POS y te ayuda a entender costos, autorización y abono. Si también quieres vender más, revisa cómo diversificar tus métodos de pago.</p>
+            <div class="article-cta__actions">
+              <a class="btn btn--solid" href="https://www.klap.cl" target="_blank" rel="noopener">Conocer Klap</a>
+              <a class="btn btn--ghost" href="diversificar-metodos-de-pago.html">Diversificar métodos de pago</a>
+            </div>
+          </div>
         </section>
 
         <div class="tags" aria-label="Palabras clave">
@@ -399,6 +671,6 @@
     </div>
   </footer>
 
-  <script src="../js/main.js?v=2" defer></script>
+  <script src="../js/main.js?v=5" defer></script>
 </body>
 </html>

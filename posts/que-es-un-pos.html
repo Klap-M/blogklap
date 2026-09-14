@@ -16,6 +16,7 @@
   <meta property="og:image" content="assets/images/posts/que-es-un-pos.png">
   <meta property="og:locale" content="es_CL">
   <meta property="article:published_time" content="2026-06-08">
+  <meta property="article:modified_time" content="2026-09-14">
   <meta property="article:author" content="Klap">
 
   <meta name="twitter:card" content="summary_large_image">
@@ -26,19 +27,19 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/base.css?v=7">
-  <link rel="stylesheet" href="../css/mobile.css?v=7">
-  <link rel="stylesheet" href="../css/desktop.css?v=7">
+  <link rel="stylesheet" href="../css/base.css?v=18">
+  <link rel="stylesheet" href="../css/mobile.css?v=18">
+  <link rel="stylesheet" href="../css/desktop.css?v=18">
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "BlogPosting",
+    "@type": "Article",
     "headline": "¿Qué es un POS y cómo revoluciona tus pagos? Todo sobre el terminal punto de venta",
     "description": "Descubre qué es un terminal punto de venta (POS), cómo funciona una transacción y qué tipo de POS elegir para tu negocio en Chile.",
     "image": "assets/images/posts/que-es-un-pos.png",
     "datePublished": "2026-06-08",
-    "dateModified": "2026-06-08",
+    "dateModified": "2026-09-14",
     "author": { "@type": "Organization", "name": "Klap", "url": "https://www.klap.cl" },
     "publisher": {
       "@type": "Organization",
@@ -52,8 +53,60 @@
     "keywords": "POS, terminal punto de venta, pagos con tarjeta, Klap, medios de pago, Chile"
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Qué es un POS o terminal punto de venta?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Un POS (Point of Sale) es un dispositivo electrónico que permite a los negocios procesar pagos con tarjetas de crédito, débito y, en muchos casos, códigos QR o billeteras digitales. Un POS moderno también puede ayudar con inventario, boletas electrónicas y reportes de venta."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cómo funciona una transacción en un POS?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "El vendedor ingresa el monto, el cliente presenta su tarjeta o celular, el POS lee los datos y envía la información de forma segura al banco emisor a través de un adquirente como Klap. El banco aprueba o rechaza y, si es aprobada, se entrega un comprobante. Todo ocurre en segundos."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué tipos de POS existen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Las modalidades más comunes son el POS tradicional o fijo (mostrador con corriente y red), el POS móvil o inalámbrico (batería, Wi-Fi o datos) y el POS virtual o App POS (Tap to Pay), que convierte un smartphone o tablet Android con NFC en un terminal, como Tap Klap."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Por qué un POS es más seguro que manejar solo efectivo?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Reduce el riesgo de manejar grandes cantidades de efectivo. Las transacciones electrónicas son más seguras y trazables que el dinero en caja."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Un POS solo cobra con tarjeta o también emite boletas?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Más que un lector de tarjetas, un POS moderno puede ser un sistema completo: gestiona transacciones, inventario, emisión de boletas electrónicas y reportes de venta. Muchos POS, como los de Klap, facilitan el cumplimiento con las normativas del SII."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
+
+  <div class="reading-progress" role="progressbar" aria-label="Progreso de lectura" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+    <div class="reading-progress__bar"></div>
+  </div>
 
   <header class="site-header" role="banner">
     <div class="container site-header__inner">
@@ -76,7 +129,7 @@
     </div>
   </header>
 
-  <article itemscope itemtype="https://schema.org/BlogPosting">
+  <article itemscope itemtype="https://schema.org/Article">
     <header class="article-hero">
       <div class="article-hero__image" aria-hidden="true">
         <img
@@ -125,12 +178,15 @@
         <p class="toc__title">Contenido</p>
         <ol>
           <li><a href="#introduccion">Introducción</a></li>
+          <li><a href="#puntos-clave">Puntos clave</a></li>
           <li><a href="#que-es-pos">¿Qué es un POS?</a></li>
           <li><a href="#componentes">Componentes básicos</a></li>
           <li><a href="#como-funciona">Cómo funciona</a></li>
           <li><a href="#beneficios">Beneficios clave</a></li>
+          <li><a href="#errores-comunes">Riesgo del efectivo</a></li>
           <li><a href="#tipos-pos">Tipos de POS</a></li>
           <li><a href="#klap">Klap y tu POS</a></li>
+          <li><a href="#preguntas-frecuentes">Preguntas frecuentes</a></li>
         </ol>
         </div>
       </aside>
@@ -141,6 +197,48 @@
           <p class="lead">En la era digital actual, ofrecer diversas opciones de pago se ha vuelto fundamental para el éxito de cualquier negocio. Ya sea que tengas una tienda física, vendas en ferias o ofrezcas servicios a domicilio, facilitar las transacciones a tus clientes es clave. Aquí entra en juego una herramienta esencial: el <strong>POS</strong> o terminal punto de venta.</p>
 
           <p>Pero, ¿qué es exactamente un POS y cómo puede transformar la manera en que gestionas tus ventas? En esta guía te lo explicamos paso a paso.</p>
+        </section>
+
+        <section id="puntos-clave">
+          <h2>Puntos clave</h2>
+          <div class="takeaways">
+            <article class="takeaway-card">
+              <span class="takeaway-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M9 18h6"/></svg>
+              </span>
+              <div>
+                <p class="takeaway-card__title">Más que una “maquinita”</p>
+                <p class="takeaway-card__text">Un POS procesa tarjetas, QR y billeteras digitales, y puede sumar inventario, boletas electrónicas y reportes de venta.</p>
+              </div>
+            </article>
+            <article class="takeaway-card">
+              <span class="takeaway-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+              </span>
+              <div>
+                <p class="takeaway-card__title">La transacción dura segundos</p>
+                <p class="takeaway-card__text">Del monto al comprobante hay siete pasos —lectura, PIN, autorización del banco y abono posterior— que ocurren en cuestión de segundos.</p>
+              </div>
+            </article>
+            <article class="takeaway-card">
+              <span class="takeaway-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 5-3.5 8.5-7 9-3.5-.5-7-4-7-9V6l7-3z"/></svg>
+              </span>
+              <div>
+                <p class="takeaway-card__title">Más ventas, menos efectivo</p>
+                <p class="takeaway-card__text">Aceptar tarjetas abre un público que no usa efectivo, acorta filas y reduce el riesgo de manejar grandes cantidades de dinero en caja.</p>
+              </div>
+            </article>
+            <article class="takeaway-card">
+              <span class="takeaway-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M7 10h.01M11 10h.01M15 10h.01"/></svg>
+              </span>
+              <div>
+                <p class="takeaway-card__title">Fijo, móvil o Tap</p>
+                <p class="takeaway-card__text">Hay POS de mostrador, inalámbricos con batería y apps Tap to Pay en el celular. Elige según dónde y cómo vendes.</p>
+              </div>
+            </article>
+          </div>
         </section>
 
         <section id="que-es-pos">
@@ -281,44 +379,118 @@
           </div>
         </section>
 
+        <section id="errores-comunes">
+          <h2>El riesgo de depender del efectivo</h2>
+          <div class="alert alert--warning" role="note">
+            <span class="alert__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4M12 17h.01"/><path d="M10.3 4.9L2.8 18a2 2 0 001.7 3h15a2 2 0 001.7-3L13.7 4.9a2 2 0 00-3.4 0z"/></svg>
+            </span>
+            <div>
+              <p class="alert__title">Manejar efectivo es más riesgoso que cobrar electrónico</p>
+              <p class="alert__text">Un POS reduce el riesgo del manejo de grandes cantidades de efectivo. Las transacciones electrónicas son más seguras y trazables: menos dinero en caja, menos exposición a pérdidas y un registro claro de cada venta.</p>
+            </div>
+          </div>
+        </section>
+
         <section id="tipos-pos">
           <h2>Tipos de POS: encuentra el ideal para ti</h2>
           <p>Elegir el POS correcto es crucial para tu operación. Estas son las modalidades más comunes:</p>
 
-          <div class="payment-grid">
-            <div class="payment-item">
-              <span class="payment-item__icon" aria-hidden="true">🏪</span>
-              <div>
-                <p class="payment-item__title">POS tradicional o fijo</p>
-                <p class="payment-item__desc">Terminales robustos, conectados a corriente y red en un mostrador. Ideales para alto volumen en un punto fijo: supermercados, farmacias o tiendas grandes.</p>
+          <div class="flip-grid">
+            <article class="flip-card" aria-label="POS tradicional o fijo. Toca para ver el detalle.">
+              <div class="flip-card__inner">
+                <div class="flip-card__face flip-card__front">
+                  <p class="flip-card__num">Tipo 1</p>
+                  <p class="flip-card__title">POS tradicional o fijo</p>
+                  <p class="flip-card__hint">Toca o pasa el cursor para ver el detalle</p>
+                </div>
+                <div class="flip-card__face flip-card__back">
+                  <p class="flip-card__num">Ideal para</p>
+                  <p class="flip-card__title">POS tradicional o fijo</p>
+                  <p class="flip-card__text">Terminales robustos, conectados a corriente y red en un mostrador. Ideales para alto volumen en un punto fijo: supermercados, farmacias o tiendas grandes.</p>
+                </div>
               </div>
-            </div>
-            <div class="payment-item">
-              <span class="payment-item__icon" aria-hidden="true">📱</span>
-              <div>
-                <p class="payment-item__title">POS móvil o inalámbrico</p>
-                <p class="payment-item__desc">Dispositivos livianos con batería, Wi-Fi o datos móviles. Perfectos para restaurantes (cobro en la mesa), ferias, food trucks o servicios a domicilio.</p>
+            </article>
+            <article class="flip-card" aria-label="POS móvil o inalámbrico. Toca para ver el detalle.">
+              <div class="flip-card__inner">
+                <div class="flip-card__face flip-card__front">
+                  <p class="flip-card__num">Tipo 2</p>
+                  <p class="flip-card__title">POS móvil o inalámbrico</p>
+                  <p class="flip-card__hint">Toca o pasa el cursor para ver el detalle</p>
+                </div>
+                <div class="flip-card__face flip-card__back">
+                  <p class="flip-card__num">Ideal para</p>
+                  <p class="flip-card__title">POS móvil o inalámbrico</p>
+                  <p class="flip-card__text">Dispositivos livianos con batería, Wi-Fi o datos móviles. Perfectos para restaurantes (cobro en la mesa), ferias, food trucks o servicios a domicilio.</p>
+                </div>
               </div>
-            </div>
-            <div class="payment-item">
-              <span class="payment-item__icon" aria-hidden="true">📲</span>
-              <div>
-                <p class="payment-item__title">POS virtual o App POS (Tap to Pay)</p>
-                <p class="payment-item__desc">Transforma tu smartphone o tablet Android con NFC en un terminal de pago. Ideal para emprendedores que buscan portabilidad con inversión mínima. Klap ofrece <strong>Tap Klap</strong> como ejemplo de esta modalidad.</p>
+            </article>
+            <article class="flip-card" aria-label="POS virtual o App POS (Tap to Pay). Toca para ver el detalle.">
+              <div class="flip-card__inner">
+                <div class="flip-card__face flip-card__front">
+                  <p class="flip-card__num">Tipo 3</p>
+                  <p class="flip-card__title">POS virtual o App POS (Tap to Pay)</p>
+                  <p class="flip-card__hint">Toca o pasa el cursor para ver el detalle</p>
+                </div>
+                <div class="flip-card__face flip-card__back">
+                  <p class="flip-card__num">Ideal para</p>
+                  <p class="flip-card__title">POS virtual o App POS (Tap to Pay)</p>
+                  <p class="flip-card__text">Transforma tu smartphone o tablet Android con NFC en un terminal de pago. Ideal para emprendedores que buscan portabilidad con inversión mínima. Klap ofrece <strong>Tap Klap</strong> como ejemplo de esta modalidad.</p>
+                </div>
               </div>
-            </div>
+            </article>
           </div>
         </section>
 
         <section id="klap">
           <h2>Klap: tu aliado en soluciones de pago POS</h2>
           <p>En Klap entendemos las necesidades de los negocios en Chile. Ofrecemos una gama de soluciones POS diseñadas para ser fáciles de usar, seguras y adaptadas a la realidad de tu emprendimiento. Con nuestras maquinitas no solo procesas pagos de forma eficiente: accedes a un ecosistema de servicios que te ayudan a crecer.</p>
+        </section>
 
-          <div class="callout callout--tip">
-            <p class="callout__title">¿Listo para revolucionar tus pagos?</p>
-            <p>Un terminal punto de venta te permite simplificar operaciones, mejorar la experiencia de tus clientes y aumentar tus ingresos. Si tienes dudas sobre qué solución POS de Klap es la mejor para ti, <a href="https://www.klap.cl/contacto" target="_blank" rel="noopener">contáctanos</a>. Estamos aquí para ayudarte a vender más y mejor.</p>
+        <section id="preguntas-frecuentes">
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq">
+            <details class="faq-item">
+              <summary>¿Qué es un POS o terminal punto de venta?</summary>
+              <div class="faq-item__answer">
+                <p>Un POS (Point of Sale) es un dispositivo electrónico que permite a los negocios procesar pagos con tarjetas de crédito, débito y, en muchos casos, códigos QR o billeteras digitales. Un POS moderno también puede ayudar con inventario, boletas electrónicas y reportes de venta.</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>¿Cómo funciona una transacción en un POS?</summary>
+              <div class="faq-item__answer">
+                <p>El vendedor ingresa el monto, el cliente presenta su tarjeta o celular, el POS lee los datos y envía la información de forma segura al banco emisor a través de un adquirente como Klap. El banco aprueba o rechaza y, si es aprobada, se entrega un comprobante. Todo ocurre en segundos.</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>¿Qué tipos de POS existen?</summary>
+              <div class="faq-item__answer">
+                <p>Las modalidades más comunes son el POS tradicional o fijo (mostrador con corriente y red), el POS móvil o inalámbrico (batería, Wi-Fi o datos) y el POS virtual o App POS (Tap to Pay), que convierte un smartphone o tablet Android con NFC en un terminal, como Tap Klap.</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>¿Por qué un POS es más seguro que manejar solo efectivo?</summary>
+              <div class="faq-item__answer">
+                <p>Reduce el riesgo de manejar grandes cantidades de efectivo. Las transacciones electrónicas son más seguras y trazables que el dinero en caja.</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>¿Un POS solo cobra con tarjeta o también emite boletas?</summary>
+              <div class="faq-item__answer">
+                <p>Más que un lector de tarjetas, un POS moderno puede ser un sistema completo: gestiona transacciones, inventario, emisión de boletas electrónicas y reportes de venta. Muchos POS, como los de Klap, facilitan el cumplimiento con las normativas del SII.</p>
+              </div>
+            </details>
           </div>
         </section>
+
+        <div class="article-cta">
+          <p class="article-cta__title">¿Listo para revolucionar tus pagos?</p>
+          <p class="article-cta__text">Un terminal punto de venta te permite simplificar operaciones, mejorar la experiencia de tus clientes y aumentar tus ingresos. Si tienes dudas sobre qué solución POS de Klap es la mejor para ti, contáctanos. Estamos aquí para ayudarte a vender más y mejor.</p>
+          <div class="article-cta__actions">
+            <a class="btn btn--solid" href="https://www.klap.cl/contacto" target="_blank" rel="noopener">Contáctanos</a>
+            <a class="btn btn--ghost" href="elegir-mejor-maquina-pos.html">Elegir la mejor máquina POS</a>
+          </div>
+        </div>
 
         <div class="tags" aria-label="Palabras clave">
           <span class="tag">POS</span>
@@ -403,6 +575,6 @@
     </div>
   </footer>
 
-  <script src="../js/main.js?v=2" defer></script>
+  <script src="../js/main.js?v=5" defer></script>
 </body>
 </html>

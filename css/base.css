@@ -1149,3 +1149,121 @@ img.placeholder-cover { object-position: 68% center; }
 @media (prefers-reduced-motion: reduce) {
   .hotspot { animation: none; }
 }
+
+/* Barras de métricas (artículos pre-sept 2026) */
+.metric-bars {
+  margin: 1.5rem 0;
+  display: grid;
+  gap: 0.875rem;
+  padding: 1.25rem;
+  background: var(--color-bg-alt, #f4f7f9);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+.metric-bars__title {
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-accent-dark);
+  margin: 0 0 0.25rem;
+}
+
+.metric-bar__head {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+}
+
+.metric-bar__value { color: var(--color-primary); }
+
+.metric-bar__track {
+  height: 10px;
+  background: #e4eaf0;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.metric-bar__fill {
+  display: block;
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+  border-radius: inherit;
+  transition: width 0.9s ease;
+}
+
+.metric-bars.is-inview .metric-bar__fill { width: var(--bar); }
+
+.metric-bar__hint {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  line-height: 1.45;
+  margin: 0.35rem 0 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .metric-bar__fill { transition: none; }
+}
+
+/* Checklist interactivo */
+.check-list {
+  margin: 1.5rem 0;
+}
+
+.check-list__progress {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin: 0 0 0.75rem;
+}
+
+.check-list__items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.check-list label {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.75rem;
+  align-items: start;
+  padding: 0.875rem 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-bg);
+  cursor: pointer;
+  font-size: 0.875rem;
+  line-height: 1.45;
+}
+
+.check-list input {
+  margin-top: 0.2rem;
+  accent-color: var(--color-accent);
+  width: 1.125rem;
+  height: 1.125rem;
+}
+
+.check-list label:has(input:checked) {
+  border-color: var(--color-accent);
+  background: var(--color-accent-light);
+}
+
+.check-list label:has(input:checked) span {
+  text-decoration: line-through;
+  opacity: 0.72;
+}
+
+.prose .metric-bars__title,
+.prose .check-list__progress {
+  margin-top: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}

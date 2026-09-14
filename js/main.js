@@ -218,3 +218,49 @@
 
   activate('1');
 })();
+
+/**
+ * Barras de métricas: animan al entrar en viewport
+ */
+(function () {
+  document.querySelectorAll('[data-metric-bars]').forEach(function (el) {
+    if (!('IntersectionObserver' in window)) {
+      el.classList.add('is-inview');
+      return;
+    }
+
+    var io = new IntersectionObserver(function (entries, observer) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-inview');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.35 });
+
+    io.observe(el);
+  });
+})();
+
+/**
+ * Checklist interactivo (expansión / segundo local)
+ */
+(function () {
+  document.querySelectorAll('[data-check-list]').forEach(function (list) {
+    var boxes = list.querySelectorAll('input[type="checkbox"]');
+    var counter = list.querySelector('[data-check-count]');
+
+    function update() {
+      var n = 0;
+      boxes.forEach(function (box) {
+        if (box.checked) n += 1;
+      });
+      if (counter) counter.textContent = n + ' de ' + boxes.length + ' listos';
+    }
+
+    boxes.forEach(function (box) {
+      box.addEventListener('change', update);
+    });
+    update();
+  });
+})();

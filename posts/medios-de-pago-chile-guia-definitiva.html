@@ -25,19 +25,19 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/base.css?v=7">
-  <link rel="stylesheet" href="../css/mobile.css?v=7">
-  <link rel="stylesheet" href="../css/desktop.css?v=7">
+  <link rel="stylesheet" href="../css/base.css?v=18">
+  <link rel="stylesheet" href="../css/mobile.css?v=18">
+  <link rel="stylesheet" href="../css/desktop.css?v=18">
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "BlogPosting",
+    "@type": "Article",
     "headline": "Medios de pago en Chile: la guía definitiva para tu negocio",
     "description": "Guía completa sobre medios de pago en Chile para emprendedores y pymes.",
     "image": "assets/images/posts/medios-de-pago-chile-guia-definitiva.png",
     "datePublished": "2025-09-14",
-    "dateModified": "2026-06-19",
+    "dateModified": "2026-09-14",
     "author": { "@type": "Organization", "name": "Klap", "url": "https://www.klap.cl" },
     "publisher": { "@type": "Organization", "name": "Klap", "url": "https://www.klap.cl" },
     "mainEntityOfPage": {
@@ -46,8 +46,60 @@
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Cuáles son los actores del ecosistema de pagos en Chile?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Consumidores (cada vez más bancarizados), comercios que buscan soluciones ágiles, adquirentes como Klap que proveen el POS y procesan transacciones, marcas de tarjetas (Visa, Mastercard) y bancos emisores (BancoEstado, Santander, BCI)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué medios de pago no pueden faltar en una tienda física?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tarjetas de débito (el medio más masivo, en gran parte por CuentaRUT), tarjetas de crédito, pagos sin contacto (NFC), billeteras digitales, pagos con código QR y, según el caso, efectivo para compras de bajo monto o zonas con menor conectividad."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué medios necesito para e-commerce o ventas online?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Un gateway de pago para procesar tarjetas de crédito y débito en el sitio, transferencia bancaria para quienes desconfían de ingresar datos de tarjeta, y links de pago para cobrar por WhatsApp, redes o correo."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Por qué es crucial diversificar los medios de pago?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Aumentas tus ventas al no perder clientes por no tener el método que prefieren, mejoras la experiencia con un pago fácil y con opciones, proyectas una imagen profesional e incrementas la seguridad al reducir el manejo de efectivo."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿El efectivo sigue siendo relevante en Chile?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Aunque su uso ha disminuido, sigue siendo relevante para compras de bajo monto o en zonas con menor conectividad."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
+
+  <div class="reading-progress" role="progressbar" aria-label="Progreso de lectura" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+    <div class="reading-progress__bar"></div>
+  </div>
 
   <header class="site-header" role="banner">
     <div class="container site-header__inner">
@@ -70,7 +122,7 @@
     </div>
   </header>
 
-  <article itemscope itemtype="https://schema.org/BlogPosting">
+  <article itemscope itemtype="https://schema.org/Article">
     <header class="article-hero">
       <div class="article-hero__image" aria-hidden="true">
         <img
@@ -119,10 +171,12 @@
         <p class="toc__title">Contenido</p>
         <ol>
           <li><a href="#introduccion">Introducción</a></li>
+          <li><a href="#puntos-clave">Puntos clave</a></li>
           <li><a href="#panorama">Panorama actual</a></li>
           <li><a href="#presenciales">Pagos presenciales</a></li>
           <li><a href="#online">Pagos online</a></li>
           <li><a href="#diversificar">¿Por qué diversificar?</a></li>
+          <li><a href="#preguntas-frecuentes">Preguntas frecuentes</a></li>
         </ol>
         </div>
       </aside>
@@ -135,6 +189,58 @@
           <p>Ofrecer los métodos de pago correctos puede marcar la diferencia entre una venta concretada y un cliente que se va con las manos vacías.</p>
 
           <p>¿Conoces todas las opciones que existen? ¿Sabes cuáles son las preferidas por los chilenos y cómo implementarlas en tu negocio de forma segura y eficiente? Esta es la guía definitiva que necesitas para navegar por el universo de los medios de pago en Chile y tomar las mejores decisiones para tu empresa.</p>
+
+          <div class="alert alert--danger" role="note">
+            <span class="alert__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4M12 17h.01"/><path d="M10.3 4.9L2.8 18a2 2 0 001.7 3h15a2 2 0 001.7-3L13.7 4.9a2 2 0 00-3.4 0z"/></svg>
+            </span>
+            <div>
+              <p class="alert__title">No perder la venta por un medio ausente</p>
+              <p class="alert__text">Ofrecer los métodos de pago correctos puede marcar la diferencia entre una venta concretada y un cliente que se va con las manos vacías.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="puntos-clave">
+          <h2>Lo que debes llevarte de esta guía</h2>
+          <div class="takeaways">
+            <article class="takeaway-card">
+              <span class="takeaway-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M3 4h2l2.4 11.2a2 2 0 002 1.6h8.8a2 2 0 001.9-1.5L21 8H7"/></svg>
+              </span>
+              <div>
+                <p class="takeaway-card__title">Aumentas tus ventas</p>
+                <p class="takeaway-card__text">No pierdes clientes por no tener el método de pago que prefieren.</p>
+              </div>
+            </article>
+            <article class="takeaway-card">
+              <span class="takeaway-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><path d="M3 20c.8-3 3.2-5 6-5s5.2 2 6 5"/><path d="M16 8h5M18.5 5.5v5"/></svg>
+              </span>
+              <div>
+                <p class="takeaway-card__title">Mejoras la experiencia</p>
+                <p class="takeaway-card__text">Un proceso de pago fácil, rápido y con opciones deja a los clientes satisfechos y con ganas de volver.</p>
+              </div>
+            </article>
+            <article class="takeaway-card">
+              <span class="takeaway-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h8M8 11h8M8 15h5"/></svg>
+              </span>
+              <div>
+                <p class="takeaway-card__title">Imagen profesional</p>
+                <p class="takeaway-card__text">Demuestra que tu negocio es moderno, seguro y está adaptado a las nuevas tecnologías.</p>
+              </div>
+            </article>
+            <article class="takeaway-card">
+              <span class="takeaway-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 5-3.5 8.5-7 9-3.5-.5-7-4-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+              </span>
+              <div>
+                <p class="takeaway-card__title">Más seguridad</p>
+                <p class="takeaway-card__text">Reduces el manejo de efectivo y confías en transacciones electrónicas trazables y seguras.</p>
+              </div>
+            </article>
+          </div>
         </section>
 
         <section id="panorama">
@@ -230,6 +336,25 @@
               </div>
             </div>
           </div>
+
+          <div class="metric-bars" data-metric-bars>
+            <p class="metric-bars__title">Énfasis relativo del artículo (no es investigación de mercado)</p>
+            <div class="metric-bar">
+              <div class="metric-bar__head"><span>Débito / CuentaRUT (más masivo)</span><span class="metric-bar__value">95%</span></div>
+              <div class="metric-bar__track"><span class="metric-bar__fill" style="--bar: 95%"></span></div>
+              <p class="metric-bar__hint">El artículo lo describe como el medio más masivo en Chile, en gran parte por CuentaRUT.</p>
+            </div>
+            <div class="metric-bar">
+              <div class="metric-bar__head"><span>NFC como norma</span><span class="metric-bar__value">90%</span></div>
+              <div class="metric-bar__track"><span class="metric-bar__fill" style="--bar: 90%"></span></div>
+              <p class="metric-bar__hint">El texto indica que el contactless ya no es novedad: es la norma, el método más rápido y preferido por su agilidad.</p>
+            </div>
+            <div class="metric-bar">
+              <div class="metric-bar__head"><span>Efectivo (bajo monto)</span><span class="metric-bar__value">35%</span></div>
+              <div class="metric-bar__track"><span class="metric-bar__fill" style="--bar: 35%"></span></div>
+              <p class="metric-bar__hint">Sigue siendo relevante para bajo monto o menor conectividad, aunque su uso ha disminuido.</p>
+            </div>
+          </div>
         </section>
 
         <section id="online">
@@ -312,6 +437,82 @@
               </tbody>
             </table>
           </div>
+
+          <div class="compare-flow" role="group" aria-label="Comparación entre pagos presenciales y online">
+            <article class="compare-flow__col compare-flow__col--bright">
+              <span class="compare-flow__badge compare-flow__badge--good">Presencial</span>
+              <h3>Tienda física y cara a cara</h3>
+              <p class="compare-flow__lead">Si tienes una tienda, un restaurante o vendes cara a cara, estos métodos no pueden faltarte.</p>
+              <ol class="compare-flow__steps">
+                <li>
+                  <span class="compare-flow__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="28" height="28"><circle cx="12" cy="12" r="12" fill="#16a34a"/><path d="M7 12.5l3 3 7-7" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                  <div>
+                    <strong>Débito, crédito y NFC en el POS</strong>
+                    <span>El medio más masivo, cuotas y contactless como norma.</span>
+                  </div>
+                </li>
+                <li>
+                  <span class="compare-flow__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="28" height="28"><circle cx="12" cy="12" r="12" fill="#16a34a"/><path d="M7 12.5l3 3 7-7" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                  <div>
+                    <strong>Wallets y código QR</strong>
+                    <span>Google Pay, Apple Pay o app bancaria acercando el celular o escaneando.</span>
+                  </div>
+                </li>
+                <li>
+                  <span class="compare-flow__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="28" height="28"><circle cx="12" cy="12" r="12" fill="#16a34a"/><path d="M7 12.5l3 3 7-7" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                  <div>
+                    <strong>Efectivo cuando aplica</strong>
+                    <span>Bajo monto o zonas con menor conectividad.</span>
+                  </div>
+                </li>
+              </ol>
+              <p class="compare-flow__result">Resultado: velocidad en el mesón y cobertura del medio que el cliente trae en la mano.</p>
+            </article>
+
+            <div class="compare-flow__vs" aria-hidden="true">vs</div>
+
+            <article class="compare-flow__col compare-flow__col--bright">
+              <span class="compare-flow__badge compare-flow__badge--good">Online</span>
+              <h3>E-commerce y ventas a distancia</h3>
+              <p class="compare-flow__lead">Si tu negocio es digital, necesitas variedad en el checkout y fuera de él.</p>
+              <ol class="compare-flow__steps">
+                <li>
+                  <span class="compare-flow__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="28" height="28"><circle cx="12" cy="12" r="12" fill="#16a34a"/><path d="M7 12.5l3 3 7-7" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                  <div>
+                    <strong>Gateway de pago</strong>
+                    <span>Procesa de forma segura débito y crédito en tu sitio.</span>
+                  </div>
+                </li>
+                <li>
+                  <span class="compare-flow__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="28" height="28"><circle cx="12" cy="12" r="12" fill="#16a34a"/><path d="M7 12.5l3 3 7-7" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                  <div>
+                    <strong>Transferencia bancaria</strong>
+                    <span>Confianza para quienes no quieren ingresar datos de tarjeta.</span>
+                  </div>
+                </li>
+                <li>
+                  <span class="compare-flow__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="28" height="28"><circle cx="12" cy="12" r="12" fill="#16a34a"/><path d="M7 12.5l3 3 7-7" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                  <div>
+                    <strong>Links de pago</strong>
+                    <span>Cobro por WhatsApp, redes o correo, sin carro de compras complejo.</span>
+                  </div>
+                </li>
+              </ol>
+              <p class="compare-flow__result">Resultado: checkout con opciones y cobros personalizados a distancia.</p>
+            </article>
+          </div>
         </section>
 
         <section id="diversificar">
@@ -327,6 +528,51 @@
           <div class="callout callout--tip">
             <p class="callout__title">💡 Solución integral</p>
             <p>Adaptarse a la diversidad de medios de pago en Chile es un paso estratégico para cualquier negocio que quiera crecer. En <strong>Klap</strong>, nuestra misión es simplificar este mundo para ti, ofreciéndote en una sola solución (tanto en POS como online) la capacidad de aceptar todos los medios de pago que tus clientes usan.</p>
+          </div>
+        </section>
+
+        <section id="preguntas-frecuentes">
+          <h2>Preguntas frecuentes sobre medios de pago en Chile</h2>
+          <div class="faq">
+            <details class="faq-item">
+              <summary>¿Cuáles son los actores del ecosistema de pagos en Chile?</summary>
+              <div class="faq-item__answer">
+                <p>Consumidores (cada vez más bancarizados), comercios que buscan soluciones ágiles, adquirentes como Klap que proveen el POS y procesan transacciones, marcas de tarjetas (Visa, Mastercard) y bancos emisores (BancoEstado, Santander, BCI).</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>¿Qué medios de pago no pueden faltar en una tienda física?</summary>
+              <div class="faq-item__answer">
+                <p>Tarjetas de débito (el medio más masivo, en gran parte por CuentaRUT), tarjetas de crédito, pagos sin contacto (NFC), billeteras digitales, pagos con código QR y, según el caso, efectivo para compras de bajo monto o zonas con menor conectividad.</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>¿Qué medios necesito para e-commerce o ventas online?</summary>
+              <div class="faq-item__answer">
+                <p>Un gateway de pago para procesar tarjetas de crédito y débito en el sitio, transferencia bancaria para quienes desconfían de ingresar datos de tarjeta, y links de pago para cobrar por WhatsApp, redes o correo.</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>¿Por qué es crucial diversificar los medios de pago?</summary>
+              <div class="faq-item__answer">
+                <p>Aumentas tus ventas al no perder clientes por no tener el método que prefieren, mejoras la experiencia con un pago fácil y con opciones, proyectas una imagen profesional e incrementas la seguridad al reducir el manejo de efectivo.</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>¿El efectivo sigue siendo relevante en Chile?</summary>
+              <div class="faq-item__answer">
+                <p>Aunque su uso ha disminuido, sigue siendo relevante para compras de bajo monto o en zonas con menor conectividad.</p>
+              </div>
+            </details>
+          </div>
+
+          <div class="article-cta">
+            <p class="article-cta__title">¿Quieres aceptar todos los medios que tus clientes ya usan?</p>
+            <p class="article-cta__text">Klap reúne POS y online en una sola solución. Si quieres profundizar en por qué diversificar impulsa ventas, sigue con el artículo dedicado.</p>
+            <div class="article-cta__actions">
+              <a class="btn btn--solid" href="https://www.klap.cl" target="_blank" rel="noopener">Conocer Klap</a>
+              <a class="btn btn--ghost" href="diversificar-metodos-de-pago.html">Por qué diversificar pagos</a>
+            </div>
           </div>
         </section>
 
@@ -415,6 +661,6 @@
     </div>
   </footer>
 
-  <script src="../js/main.js?v=2" defer></script>
+  <script src="../js/main.js?v=5" defer></script>
 </body>
 </html>
