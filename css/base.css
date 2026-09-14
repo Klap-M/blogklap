@@ -1636,6 +1636,7 @@ img.placeholder-cover { object-position: 68% center; }
   height: 20px;
   flex-shrink: 0;
   display: block;
+  object-fit: contain;
 }
 
 .site-footer__hours {
