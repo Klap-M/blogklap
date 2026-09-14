@@ -122,8 +122,8 @@
   var range = widget.querySelector('input[type="range"]');
   var fillSales = widget.querySelector('[data-sales-fill]');
   var fillQuota = widget.querySelector('[data-quota-fill]');
-  var salesLabel = widget.querySelector('[data-sales-amount]');
-  var quotaLabel = widget.querySelector('[data-quota-amount]');
+  var salesLabels = widget.querySelectorAll('[data-sales-amount]');
+  var quotaLabels = widget.querySelectorAll('[data-quota-amount]');
   var percent = parseFloat(widget.getAttribute('data-percent')) || 8;
 
   if (!range) return;
@@ -141,8 +141,19 @@
 
     if (fillSales) fillSales.style.height = salesPct + '%';
     if (fillQuota) fillQuota.style.height = quotaPct + '%';
-    if (salesLabel) salesLabel.textContent = formatCLP(sales);
-    if (quotaLabel) quotaLabel.textContent = formatCLP(quota);
+    salesLabels.forEach(function (el) { el.textContent = formatCLP(sales); });
+    quotaLabels.forEach(function (el) { el.textContent = formatCLP(quota); });
+
+    var scenario = widget.querySelector('[data-quota-scenario]');
+    if (scenario) {
+      if (sales < max * 0.4) {
+        scenario.textContent = 'Ventas bajas: la cuota disminuye y tu caja no se asfixia.';
+      } else if (sales > max * 0.75) {
+        scenario.textContent = 'Temporada alta: pagas más porque vendes más, y el financiamiento se cubre solo.';
+      } else {
+        scenario.textContent = 'Ventas normales: la cuota se mantiene proporcional a tu flujo real.';
+      }
+    }
   }
 
   range.addEventListener('input', update);
