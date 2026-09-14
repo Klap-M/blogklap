@@ -1591,7 +1591,7 @@ img.placeholder-cover { object-position: 68% center; }
   display: inline-block;
   color: #fff;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 16px;
   margin: 6px 0;
 }
@@ -1600,7 +1600,7 @@ img.placeholder-cover { object-position: 68% center; }
   border-bottom: 2px solid #fff;
   color: #b3bcc9;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 16px;
   margin: 0 0 10px;
   padding-bottom: 9px;
@@ -1623,11 +1623,11 @@ img.placeholder-cover { object-position: 68% center; }
 
 .site-footer__row a {
   color: #fff;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .site-footer__whatsapp {
-  font-weight: 700;
+  font-weight: 800;
   line-height: 21px;
 }
 
