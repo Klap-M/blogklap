@@ -1580,7 +1580,9 @@ img.placeholder-cover { object-position: 68% center; }
 
 .site-footer a:hover,
 .site-footer a:focus-visible {
-  opacity: 0.7;
+  opacity: 0.5;
+  color: #fff;
+  text-decoration: none;
 }
 
 .site-footer__list {
@@ -1589,21 +1591,23 @@ img.placeholder-cover { object-position: 68% center; }
 
 .site-footer__list a {
   display: inline-block;
-  color: #fff;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
-  font-weight: 800;
-  line-height: 16px;
+  font-weight: 600;
+  line-height: normal;
+  color: #fff;
+  text-decoration: none;
   margin: 6px 0;
 }
 
 .site-footer__heading {
   border-bottom: 2px solid #fff;
-  color: #b3bcc9;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
-  font-weight: 800;
-  line-height: 16px;
+  font-weight: 700;
+  line-height: normal;
   margin: 0 0 10px;
-  padding-bottom: 9px;
 }
 
 .site-footer__contact .site-footer__heading + .site-footer__heading,
@@ -1615,20 +1619,26 @@ img.placeholder-cover { object-position: 68% center; }
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 5px;
   margin: 0 0 6px;
-  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
   line-height: 21px;
+  color: #fff;
 }
 
 .site-footer__row a {
+  padding-left: 5px;
   color: #fff;
-  font-weight: 800;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .site-footer__whatsapp {
-  font-weight: 800;
+  font-size: 14px;
+  font-weight: 700;
   line-height: 21px;
+  color: #fff;
 }
 
 .site-footer__icon {
@@ -1640,10 +1650,11 @@ img.placeholder-cover { object-position: 68% center; }
 }
 
 .site-footer__hours {
-  color: #fff;
-  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
   font-weight: 400;
   line-height: 16px;
+  color: #fff;
   margin: 12px 0 0;
   max-width: 16.5rem;
 }
@@ -1658,23 +1669,21 @@ img.placeholder-cover { object-position: 68% center; }
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-left: 0;
 }
 
 .site-footer__legal {
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.7;
-  color: #b3bcc9;
+  color: #fff;
 }
 
 .site-footer__legal a {
-  color: #b3bcc9;
-  text-decoration: underline;
-  text-underline-offset: 2px;
-}
-
-.site-footer__legal a:hover,
-.site-footer__legal a:focus-visible {
-  opacity: 0.7;
-  color: #b3bcc9;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  text-decoration: none;
 }
