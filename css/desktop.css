@@ -504,6 +504,34 @@
   .flip-grid { grid-template-columns: repeat(3, 1fr); }
   .cash-timeline { grid-template-columns: 1fr; }
   .benefit-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+  .plan-compare { grid-template-columns: 1fr 1.08fr; gap: 1.25rem; align-items: stretch; }
+  .plan-card { padding: 1.5rem 1.5rem 1.75rem; }
+  .payout-timeline {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+  }
+  .payout-timeline::before {
+    content: '';
+    position: absolute;
+    top: 2.35rem;
+    left: 12%;
+    right: 12%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+    z-index: 0;
+    pointer-events: none;
+  }
+  .payout-timeline__item { z-index: 1; padding: 0 0.4rem; }
+  .payout-timeline__node {
+    grid-template-columns: 1fr;
+    text-align: center;
+    min-height: 220px;
+    justify-items: center;
+  }
+  .payout-timeline__amount { margin-top: 0.35rem; }
+  .case-tabs__tab { font-size: 0.8125rem; min-height: 88px; }
+  .case-tabs__emoji { font-size: 1.75rem; }
+  .case-tabs__panel { padding: 1.5rem; }
   .benefit-card {
     padding: 1.5rem 1.5rem 1.75rem;
     min-height: 200px;

@@ -264,3 +264,65 @@
     update();
   });
 })();
+
+/**
+ * Timeline de abono (Cuota Comercio)
+ */
+(function () {
+  document.querySelectorAll('[data-payout-timeline]').forEach(function (list) {
+    var items = list.querySelectorAll('[data-payout]');
+
+    function activate(id) {
+      items.forEach(function (item) {
+        var on = item.getAttribute('data-payout') === id;
+        item.classList.toggle('is-active', on);
+        var button = item.querySelector('button');
+        if (button) button.setAttribute('aria-pressed', on ? 'true' : 'false');
+      });
+    }
+
+    items.forEach(function (item) {
+      var button = item.querySelector('button');
+      if (!button) return;
+      button.addEventListener('click', function () {
+        activate(item.getAttribute('data-payout'));
+      });
+    });
+  });
+})();
+
+/**
+ * Pestañas de casos de uso (Cuota Comercio)
+ */
+(function () {
+  document.querySelectorAll('[data-case-tabs]').forEach(function (root) {
+    var tabs = root.querySelectorAll('[role="tab"]');
+    var panels = root.querySelectorAll('[role="tabpanel"]');
+
+    function activate(id) {
+      tabs.forEach(function (tab) {
+        var on = tab.getAttribute('data-tab') === id;
+        tab.setAttribute('aria-selected', on ? 'true' : 'false');
+        tab.tabIndex = on ? 0 : -1;
+      });
+      panels.forEach(function (panel) {
+        panel.hidden = panel.getAttribute('data-panel') !== id;
+      });
+    }
+
+    tabs.forEach(function (tab) {
+      tab.addEventListener('click', function () {
+        activate(tab.getAttribute('data-tab'));
+      });
+      tab.addEventListener('keydown', function (event) {
+        var keys = { ArrowRight: 1, ArrowLeft: -1 };
+        if (!keys[event.key]) return;
+        event.preventDefault();
+        var index = Array.prototype.indexOf.call(tabs, tab);
+        var next = tabs[(index + keys[event.key] + tabs.length) % tabs.length];
+        next.focus();
+        activate(next.getAttribute('data-tab'));
+      });
+    });
+  });
+})();
