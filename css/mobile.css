@@ -547,8 +547,23 @@
 
   .callout--info { background: #eef4f8; border-color: var(--color-primary); }
   .callout--tip { background: var(--color-accent-light); border-color: var(--color-accent); }
+  .callout--warning { background: var(--color-warning-bg); border-color: var(--color-warning-border); }
   .callout__title { font-size: 0.875rem; font-weight: 700; margin-bottom: 0.375rem; }
   .callout p { font-size: 0.8125rem; color: var(--color-text-muted); line-height: 1.55; margin: 0; }
+
+  /* ── TAKEAWAYS / FAQ / CTA / COMPARATIVO ── */
+  .takeaways { grid-template-columns: 1fr; }
+  .compare-flow { grid-template-columns: 1fr; }
+  .compare-flow__vs {
+    padding: 0.25rem 0;
+  }
+  .case-cards { grid-template-columns: 1fr; }
+  .article-cta { padding: 1.25rem; }
+  .article-cta__title { font-size: 1.125rem; }
+  .article-cta__actions .btn { width: 100%; min-height: 48px; }
+  .flip-grid { grid-template-columns: 1fr; }
+  .cash-timeline__days { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .faq-item summary { font-size: 0.9375rem; min-height: 48px; }
 
   /* ── TAGS ── */
   .tags {

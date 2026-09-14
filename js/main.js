@@ -90,3 +90,82 @@
     });
   });
 })();
+
+/**
+ * Barra de progreso de lectura
+ */
+(function () {
+  var bar = document.querySelector('.reading-progress__bar');
+  var track = document.querySelector('.reading-progress');
+  if (!bar) return;
+
+  function updateProgress() {
+    var scrollTop = window.scrollY || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - window.innerHeight;
+    var percent = height > 0 ? Math.min(100, Math.max(0, (scrollTop / height) * 100)) : 0;
+    bar.style.width = percent + '%';
+    if (track) track.setAttribute('aria-valuenow', String(Math.round(percent)));
+  }
+
+  window.addEventListener('scroll', updateProgress, { passive: true });
+  window.addEventListener('resize', updateProgress);
+  updateProgress();
+})();
+
+/**
+ * Widget de cuota variable (artículo de financiamiento)
+ */
+(function () {
+  var widget = document.querySelector('[data-quota-visual]');
+  if (!widget) return;
+
+  var range = widget.querySelector('input[type="range"]');
+  var fillSales = widget.querySelector('[data-sales-fill]');
+  var fillQuota = widget.querySelector('[data-quota-fill]');
+  var salesLabel = widget.querySelector('[data-sales-amount]');
+  var quotaLabel = widget.querySelector('[data-quota-amount]');
+  var percent = parseFloat(widget.getAttribute('data-percent')) || 8;
+
+  if (!range) return;
+
+  function formatCLP(n) {
+    return '$' + Math.round(n).toLocaleString('es-CL');
+  }
+
+  function update() {
+    var max = Number(range.max) || 1;
+    var sales = Number(range.value);
+    var quota = sales * (percent / 100);
+    var salesPct = (sales / max) * 100;
+    var quotaPct = Math.min(100, (quota / (max * (percent / 100))) * 100);
+
+    if (fillSales) fillSales.style.height = salesPct + '%';
+    if (fillQuota) fillQuota.style.height = quotaPct + '%';
+    if (salesLabel) salesLabel.textContent = formatCLP(sales);
+    if (quotaLabel) quotaLabel.textContent = formatCLP(quota);
+  }
+
+  range.addEventListener('input', update);
+  update();
+})();
+
+/**
+ * Flip-cards: tap en mobile además del hover
+ */
+(function () {
+  document.querySelectorAll('.flip-card').forEach(function (card) {
+    if (!card.hasAttribute('tabindex')) card.setAttribute('tabindex', '0');
+    card.setAttribute('role', 'button');
+
+    card.addEventListener('click', function () {
+      card.classList.toggle('is-flipped');
+    });
+
+    card.addEventListener('keydown', function (event) {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        card.classList.toggle('is-flipped');
+      }
+    });
+  });
+})();

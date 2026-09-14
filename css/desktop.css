@@ -442,8 +442,67 @@
 
   .callout--info { background: #eef4f8; border-color: var(--color-primary); }
   .callout--tip { background: var(--color-accent-light); border-color: var(--color-accent); }
+  .callout--warning { background: var(--color-warning-bg); border-color: var(--color-warning-border); }
   .callout__title { font-weight: 700; font-size: 0.9375rem; margin-bottom: 0.5rem; }
   .callout p { font-size: 0.9375rem; color: var(--color-text-muted); margin: 0; }
+
+  /* ── TAKEAWAYS / FAQ / CTA / COMPARATIVO ── */
+  .takeaways {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .takeaway-card {
+    padding: 1.25rem;
+    transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+  }
+
+  .takeaway-card:hover {
+    border-color: var(--color-accent);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+  }
+
+  .takeaway-card__title { font-size: 1rem; }
+  .takeaway-card__text { font-size: 0.875rem; }
+
+  .compare-flow {
+    grid-template-columns: 1fr auto 1fr;
+    gap: 1rem;
+    align-items: stretch;
+  }
+
+  .compare-flow__col { padding: 1.5rem; }
+  .compare-flow__vs {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 0.8125rem;
+  }
+
+  .case-cards { grid-template-columns: repeat(2, 1fr); gap: 1.25rem; }
+  .case-card { transition: box-shadow 0.2s, transform 0.2s; }
+  .case-card:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
+  .case-card__title { font-size: 1.0625rem; }
+  .case-card__text { font-size: 0.875rem; }
+
+  .alert { padding: 1.125rem 1.25rem; }
+  .alert__title { font-size: 1rem; }
+  .alert__text { font-size: 0.875rem; }
+
+  .faq-item summary { font-size: 1rem; padding: 1.125rem 3rem 1.125rem 1.25rem; }
+  .faq-item__answer { font-size: 0.9375rem; padding: 1rem 1.25rem 1.25rem; }
+
+  .article-cta { padding: 2rem; }
+  .article-cta__title { font-size: 1.5rem; }
+  .article-cta__actions {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .article-cta__actions .btn { width: auto; min-width: 220px; }
+
+  .quota-visual { padding: 1.75rem; }
+  .flip-grid { grid-template-columns: repeat(3, 1fr); }
+  .cash-timeline { grid-template-columns: 1fr; }
 
   /* ── TAGS ── */
   .tags {
