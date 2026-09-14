@@ -608,42 +608,35 @@
 
   /* ── FOOTER ── */
   .site-footer {
-    background: var(--color-bg-dark);
-    color: rgba(255,255,255,0.7);
-    padding: 1.5rem 0 1.25rem;
+    padding: 2rem 0 1.5rem;
     width: 100%;
   }
 
-  .site-footer__inner {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
+  .site-footer__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem 1.25rem;
+    align-items: start;
   }
 
-  .site-footer__logo { height: 26px; filter: brightness(0) invert(1); }
-
-  .site-footer__links {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
+  .site-footer__list a {
+    padding: 0.15rem 0;
+    min-height: 32px;
   }
 
-  .site-footer__links a {
-    display: block;
-    padding: 0.5rem 0;
-    font-size: 0.875rem;
-    color: rgba(255,255,255,0.7);
-    min-height: 40px;
+  .site-footer__heading {
+    max-width: 9.5rem;
   }
 
-  .site-footer__copy {
-    font-size: 0.75rem;
-    opacity: 0.5;
+  .site-footer__social .site-footer__heading {
+    max-width: 6.5rem;
+  }
+
+  .site-footer__legal {
     text-align: left;
+    margin-top: 1.5rem;
     padding-top: 1rem;
-    margin-top: 1rem;
-    border-top: 1px solid rgba(255,255,255,0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
   }
 }
 

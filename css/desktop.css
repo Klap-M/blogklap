@@ -586,24 +586,33 @@
 
   /* ── FOOTER ── */
   .site-footer {
-    background: var(--color-bg-dark);
-    color: rgba(255,255,255,0.7);
-    padding: 3rem 0 2rem;
+    padding: 2.75rem 0 2rem;
   }
 
-  .site-footer__inner {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2rem;
+  .site-footer__grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1.35fr) minmax(0, 0.7fr);
+    gap: 2rem 1.5rem;
+    align-items: start;
   }
 
-  .site-footer__logo { height: 30px; filter: brightness(0) invert(1); }
-  .site-footer__links { display: flex; gap: 1.5rem; }
-  .site-footer__links a { color: rgba(255,255,255,0.7); font-size: 0.875rem; }
-  .site-footer__links a:hover { color: #fff; }
-  .site-footer__copy { font-size: 0.8125rem; opacity: 0.5; text-align: center; padding-top: 2rem; margin-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1); }
+  .site-footer__heading {
+    max-width: 11rem;
+  }
+
+  .site-footer__social .site-footer__heading {
+    max-width: 7rem;
+  }
+
+  .site-footer__hours {
+    max-width: 18rem;
+  }
+
+  .site-footer__legal {
+    text-align: center;
+    margin-top: 1.75rem;
+    font-size: 0.6875rem;
+  }
 
   .post-card__image img.placeholder-cover {
     object-position: 68% center;
