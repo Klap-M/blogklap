@@ -1570,6 +1570,7 @@ img.placeholder-cover { object-position: 68% center; }
 .site-footer {
   background: var(--color-bg-dark);
   color: #fff;
+  font-family: "Montserrat", sans-serif;
 }
 
 .site-footer a {
