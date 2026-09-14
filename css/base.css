@@ -858,7 +858,8 @@ img.placeholder-cover { object-position: 68% center; }
 }
 
 .compare-flow__col--bright {
-  background: linear-gradient(180deg, #e8faf2 0%, #ffffff 55%);
+  background-color: #e8faf2;
+  background-image: linear-gradient(180deg, #e8faf2 0%, #ffffff 55%);
   border: 2px solid var(--color-accent);
   box-shadow: 0 10px 28px rgba(38, 208, 124, 0.18);
 }
@@ -1046,12 +1047,26 @@ img.placeholder-cover { object-position: 68% center; }
   justify-content: center;
 }
 
-.store-map__zone--door { grid-area: door; background: #f4f7f9; }
-.store-map__zone--shelf { grid-area: shelf; }
+.store-map__zone--door {
+  grid-area: door;
+  background: linear-gradient(90deg, #fff4cc 0%, #ffe08a 50%, #fff4cc 100%);
+}
+.store-map__zone--shelf { grid-area: shelf; background: #fff8f0; }
 .store-map__zone--aisle { grid-area: aisle; background: transparent; border-style: dotted; }
-.store-map__zone--counter { grid-area: counter; background: var(--color-accent-light); border-color: var(--color-accent); }
-.store-map__zone--staff { grid-area: staff; }
-.store-map__zone--dates { grid-area: dates; }
+.store-map__zone--counter {
+  grid-area: counter;
+  background: linear-gradient(135deg, #7be3b0 0%, #26d07c 70%);
+  border-color: var(--color-accent);
+  color: var(--color-primary-dark);
+}
+.store-map__zone--staff {
+  grid-area: staff;
+  background: linear-gradient(180deg, #fff 0%, #d9f5e8 100%);
+}
+.store-map__zone--dates {
+  grid-area: dates;
+  background: linear-gradient(180deg, #fff 0%, #ffe8b3 100%);
+}
 
 .hotspot {
   position: absolute;
