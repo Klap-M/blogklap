@@ -1571,7 +1571,6 @@ img.placeholder-cover { object-position: 68% center; }
   background: var(--color-bg-dark);
   color: #fff;
   font-family: "Montserrat", sans-serif;
-  font-weight: 700;
 }
 
 .site-footer a {
@@ -1590,19 +1589,21 @@ img.placeholder-cover { object-position: 68% center; }
 
 .site-footer__list a {
   display: inline-block;
-  font-size: 0.875rem;
+  color: #fff;
+  font-size: 16px;
   font-weight: 700;
-  line-height: 1.85;
+  line-height: 16px;
+  margin: 6px 0;
 }
 
 .site-footer__heading {
   border-bottom: 2px solid #fff;
-  color: #c5ced6;
-  font-size: 0.9375rem;
+  color: #b3bcc9;
+  font-size: 16px;
   font-weight: 700;
-  line-height: 1.4;
-  margin: 0 0 0.625rem;
-  padding-bottom: 0.2rem;
+  line-height: 16px;
+  margin: 0 0 10px;
+  padding-bottom: 9px;
 }
 
 .site-footer__contact .site-footer__heading + .site-footer__heading,
@@ -1614,18 +1615,20 @@ img.placeholder-cover { object-position: 68% center; }
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 0.4rem;
-  margin: 0 0 0.35rem;
-  font-size: 0.875rem;
-  line-height: 1.4;
+  gap: 5px;
+  margin: 0 0 6px;
+  font-size: 16px;
+  line-height: 21px;
 }
 
 .site-footer__row a {
+  color: #fff;
   font-weight: 700;
 }
 
 .site-footer__whatsapp {
   font-weight: 700;
+  line-height: 21px;
 }
 
 .site-footer__icon {
@@ -1636,10 +1639,11 @@ img.placeholder-cover { object-position: 68% center; }
 }
 
 .site-footer__hours {
-  font-size: 0.8125rem;
-  font-weight: 500;
-  line-height: 1.35;
-  margin: 0.75rem 0 0;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  margin: 12px 0 0;
   max-width: 16.5rem;
 }
 
@@ -1656,20 +1660,20 @@ img.placeholder-cover { object-position: 68% center; }
 }
 
 .site-footer__legal {
-  font-size: 0.8125rem;
+  font-size: 14px;
   font-weight: 400;
   line-height: 1.7;
-  color: rgba(255, 255, 255, 0.78);
+  color: #b3bcc9;
 }
 
 .site-footer__legal a {
-  color: rgba(255, 255, 255, 0.9);
+  color: #b3bcc9;
   text-decoration: underline;
   text-underline-offset: 2px;
 }
 
 .site-footer__legal a:hover,
 .site-footer__legal a:focus-visible {
-  opacity: 1;
-  color: #fff;
+  opacity: 0.7;
+  color: #b3bcc9;
 }
