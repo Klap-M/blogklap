@@ -61,6 +61,7 @@
     text-align: left;
     overflow: hidden;
     min-height: 280px;
+    aspect-ratio: 2560 / 730;
     display: flex;
     align-items: center;
   }
