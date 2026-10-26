@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Reporte del blog Klap — velocidad hecha, contenidos pendientes</title>
+  <style>
+    :root {
+      --navy: #002b49;
+      --ink: #143044;
+      --muted: #4a6278;
+      --line: #dde3ea;
+      --bg: #f4f7f8;
+      --card: #ffffff;
+      --green: #1fb368;
+      --green-bg: #e8faf2;
+      --amber: #8a5a00;
+      --amber-bg: #fff6e0;
+      --blue: #0b5cab;
+      --blue-bg: #e8f2fb;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.55;
+    }
+    main {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 2.5rem 1.25rem 4rem;
+    }
+    header.hero {
+      background: var(--navy);
+      color: #fff;
+      padding: 2.25rem 1.25rem;
+    }
+    header.hero .inner { max-width: 980px; margin: 0 auto; }
+    .kicker {
+      margin: 0 0 0.5rem;
+      font-size: 0.8rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #8ee0b4;
+    }
+    h1 { margin: 0 0 0.75rem; font-size: 1.85rem; line-height: 1.2; }
+    h2 { margin: 2.25rem 0 0.5rem; font-size: 1.35rem; color: var(--navy); }
+    h3 { margin: 1.5rem 0 0.4rem; font-size: 1.05rem; color: var(--navy); }
+    p { margin: 0.4rem 0 0.8rem; }
+    .lead { font-size: 1.05rem; max-width: 42rem; }
+    .note { color: var(--muted); font-size: 0.92rem; }
+    .stat {
+      display: inline-block;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 0.9rem 1.1rem;
+      margin: 1rem 0 0.4rem;
+    }
+    .stat strong { display: block; font-size: 1.6rem; color: var(--green); }
+    .stat span { color: var(--muted); font-size: 0.9rem; }
+    .wrap {
+      overflow-x: auto;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+    }
+    table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+    th, td { text-align: left; vertical-align: top; padding: 0.75rem 0.85rem; border-bottom: 1px solid var(--line); }
+    th { background: #f8fafb; color: var(--navy); font-size: 0.82rem; }
+    tr:last-child td { border-bottom: 0; }
+    td:first-child { font-weight: 600; color: var(--navy); }
+    .ok td:first-child { box-shadow: inset 3px 0 0 var(--green); }
+    .wait td:first-child { box-shadow: inset 3px 0 0 #e0b422; }
+    .mid td:first-child { box-shadow: inset 3px 0 0 #3b82c4; }
+    .callout {
+      background: var(--amber-bg);
+      border: 1px solid #f0d48a;
+      border-radius: 12px;
+      padding: 0.9rem 1rem;
+      margin: 1rem 0;
+    }
+    .callout strong { color: var(--amber); }
+    ul { margin: 0.3rem 0 0.8rem; padding-left: 1.2rem; }
+    li { margin: 0.25rem 0; }
+    footer {
+      margin-top: 2.5rem;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+    @media print {
+      body { background: #fff; }
+      header.hero { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+      .wrap { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="inner">
+      <p class="kicker">Blog Klap · 5 de octubre de 2026</p>
+      <h1>Reporte: velocidad hecha, contenidos pendientes</h1>
+      <p class="lead">La tanda técnica ya está en el código. La de contenidos sigue esperando la lista de búsquedas de Google Search Console.</p>
+    </div>
+  </header>
+  <main>
+    <div class="stat">
+      <strong>5</strong>
+      <span>Cambios de velocidad aplicados</span>
+    </div>
+    <p class="note">Revisado en local, en escritorio y en celular. Este archivo no usa internet: se abre con doble clic.</p>
+
+    <h2>Cambios hechos y qué problema resolvieron</h2>
+    <p>Cada fila es un cambio visible en el sitio y el aviso de PageSpeed que ataca.</p>
+    <div class="wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Cambio</th>
+            <th>En fácil</th>
+            <th>Problema que resuelve</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="ok">
+            <td>Fotos más livianas</td>
+            <td>Las portadas se sirven en WebP y al tamaño en que se ven. El celular no descarga la foto grande de escritorio, y el escritorio no descarga la de celular.</td>
+            <td>PageSpeed: imágenes demasiado pesadas y más grandes que la pantalla. Eso atrasaba la carga (LCP).</td>
+          </tr>
+          <tr class="ok">
+            <td>Letras sin esperar a Google</td>
+            <td>Inter y Montserrat viven en el blog. El texto aparece al tiro con la letra del sistema y después cambia a la de Klap.</td>
+            <td>PageSpeed: Google Fonts frenaba la primera pintada. Antes se pedían 11 grosores; ahora son 2 archivos (47 KB y 35 KB).</td>
+          </tr>
+          <tr class="ok">
+            <td>CSS que no estorba</td>
+            <td>La hoja de celular solo frena la carga en el celular. La de escritorio, solo en escritorio. La base sigue cargando siempre.</td>
+            <td>PageSpeed: tres hojas de estilo bloqueaban el primer render en todas las pantallas.</td>
+          </tr>
+          <tr class="ok">
+            <td>Caché de un año</td>
+            <td>CSS, JavaScript, fotos e íconos se guardan en el navegador. Quien vuelve no los vuelve a bajar, salvo que cambiemos el archivo.</td>
+            <td>PageSpeed: los estáticos no tenían caché largo. Entra en vigor al publicar en Vercel.</td>
+          </tr>
+          <tr class="ok">
+            <td>Logo del propio blog</td>
+            <td>El logo ya no se pide a klap.cl. Es un WebP de 5,6 KB guardado en el sitio.</td>
+            <td>PageSpeed: el logo venía de klap.cl con una dirección que el navegador no podía guardar.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">Ejemplo de peso: la portada de Multiservicios pasó de 611 KB a 39 KB en celular, 74 KB en la tarjeta y 116 KB en el hero de escritorio. La portada del home pasó de 301 KB a 44 KB.</p>
+
+    <h2>Pendientes de contenidos y SEO</h2>
+    <p>Esto es lo que quedó de la estrategia de contenidos. No se hizo en la tanda técnica porque depende de datos de Search Console y de las URLs de producto.</p>
+    <div class="wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Pendiente</th>
+            <th>Estado</th>
+            <th>En una frase</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="wait">
+            <td>1. Lista de keywords</td>
+            <td>Bloqueado</td>
+            <td>Sin el export de Search Console no se sabe qué artículo tocar.</td>
+          </tr>
+          <tr class="wait">
+            <td>2. Título, H1 y texto</td>
+            <td>Espera la lista</td>
+            <td>Alinear cada artículo con la búsqueda que ya rankea entre el puesto 4 y el 20.</td>
+          </tr>
+          <tr class="mid">
+            <td>3. Enlaces entre artículos</td>
+            <td>A medias</td>
+            <td>Hay tarjetas al final. Faltan 1 o 2 enlaces dentro del texto.</td>
+          </tr>
+          <tr class="mid">
+            <td>4. Botón al producto</td>
+            <td>A medias</td>
+            <td>Varios botones dicen el producto y llevan a la home de klap.cl.</td>
+          </tr>
+          <tr>
+            <td>5. Reporte cada 3 meses</td>
+            <td>No es código</td>
+            <td>Rutina en Search Console para ver si subieron los clics.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout">
+      <strong>Antes de reescribir artículos.</strong>
+      Hace falta el export de Search Console: consulta, impresiones, clics, CTR y posición media, de los últimos 3 meses. Solo las consultas que ya aparecen entre el puesto 4 y el 20 y que tienen muchas impresiones.
+    </div>
+
+    <h3>1. Armar la lista de keywords</h3>
+    <p>En Search Console, informe de rendimiento, últimos 3 meses. Ordenar por impresiones. Quedarse con las consultas cuya posición media está entre 4 y 20. Asignar cada consulta a un artículo que ya existe. No crear páginas nuevas. Entregar una tabla con consulta, impresiones, posición y URL del artículo.</p>
+
+    <h3>2. Alinear título, H1 y el primer párrafo</h3>
+    <p>Por cada fila de esa lista, en el HTML del artículo: el title lleva la keyword cerca del inicio y cierra con “| Blog Klap”. El único H1 del hero dice la misma idea. Un H2 responde la pregunta de esa búsqueda. El primer párrafo, el de la clase lead, contesta en las primeras líneas.</p>
+    <p>Hoy título y H1 a veces no coinciden. En boleta electrónica el title dice “Automatiza tu POS y evita multas” y el H1 dice “Automatiza tu negocio, despídete del papeleo y evita multas del SII”. Google usa el title para el resultado; el lector ve el H1.</p>
+
+    <h3>3. Enlazar artículos dentro del texto</h3>
+    <p>En cada artículo, una o dos frases del cuerpo apuntan a un artículo hermano. Las dos tarjetas del final se quedan. Los grupos que hay que cruzar:</p>
+    <ul>
+      <li>POS: “Qué es un POS”, “Elegir máquina”, “Pagos con tarjeta”, “Medios de pago” y “Online vs presencial”.</li>
+      <li>Caja: “Flujo de caja / Abono Ya”, “Financiamiento / Impulso” y “Boleta electrónica”.</li>
+      <li>Venta: “Cuota Comercio”, “Diversificar métodos de pago” y “Multiservicios”.</li>
+      <li>Seguridad: “Fraude del cambiazo” con “Elegir POS” y “Boleta electrónica”. “Segundo local” con “Diversificar” o “Medios de pago”.</li>
+    </ul>
+
+    <h3>4. Llevar el botón final a la página del producto</h3>
+    <p>El botón de cierre debe ir a la ficha del producto, no a https://www.klap.cl. Hay que confirmar con Klap la URL exacta de Abono Ya, Impulso y boleta electrónica antes de cambiarlas.</p>
+    <div class="wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Artículo</th>
+            <th>Botón hoy</th>
+            <th>A dónde va</th>
+            <th>A dónde debería ir</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="wait">
+            <td>Flujo de caja</td>
+            <td>Activar Abono Ya</td>
+            <td>Home de klap.cl</td>
+            <td>Página de Abono Ya</td>
+          </tr>
+          <tr class="wait">
+            <td>Financiamiento</td>
+            <td>Revisar Impulso Klap</td>
+            <td>Home de klap.cl</td>
+            <td>Página de Impulso</td>
+          </tr>
+          <tr class="wait">
+            <td>Boleta electrónica</td>
+            <td>Activar boleta en Klap</td>
+            <td>Home de klap.cl</td>
+            <td>Página de boleta o POS</td>
+          </tr>
+          <tr class="wait">
+            <td>Diversificar, guía de medios, tarjeta, online vs presencial, segundo local, fraude</td>
+            <td>Conocer Klap o similar</td>
+            <td>Home de klap.cl</td>
+            <td>La ficha del producto del que habla el texto</td>
+          </tr>
+          <tr class="ok">
+            <td>Cuota Comercio</td>
+            <td>Ir al Portal Comercio</td>
+            <td>Portal Comercio</td>
+            <td>Ya está bien</td>
+          </tr>
+          <tr class="ok">
+            <td>Multiservicios</td>
+            <td>Activar Multiservicios</td>
+            <td>Home comercios</td>
+            <td>Ya está bien</td>
+          </tr>
+          <tr class="ok">
+            <td>Qué es un POS y Elegir máquina</td>
+            <td>Contáctanos</td>
+            <td>Contacto</td>
+            <td>Ya está bien</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>5. Medir cada tres meses</h3>
+    <p>No es un cambio de código. Cada tres meses, en Search Console, anotar clics, impresiones, CTR y posición media de los artículos tocados. Con eso se arma la siguiente lista de keywords entre el puesto 4 y el 20. Sirve para ver si el CTR subió y si la posición media bajó de número.</p>
+
+    <footer>
+      Archivo local para revisión. No forma parte de las páginas del blog. Si el repo se publica en Vercel, esta página también quedaría en línea: conviene sacarla del deploy o dejarla solo en el computador.
+    </footer>
+  </main>
+</body>
+</html>

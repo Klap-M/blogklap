@@ -624,8 +624,16 @@ img.placeholder-cover { object-position: 68% center; }
 .article-cta__text {
   font-size: 0.9375rem;
   line-height: 1.6;
-  color: rgba(255, 255, 255, 0.82);
+  color: rgba(255, 255, 255, 0.92);
   margin-bottom: 1.25rem;
+}
+
+/* .prose p pinta el texto del mismo azul que el fondo del recuadro.
+   Esta regla gana por especificidad en las entradas actuales y en las futuras. */
+.prose .article-cta p,
+.prose .article-cta__title,
+.prose .article-cta__text {
+  color: #fff;
 }
 
 .article-cta__actions {
@@ -658,6 +666,10 @@ img.placeholder-cover { object-position: 68% center; }
   height: auto;
   aspect-ratio: 1024 / 249;
   object-fit: cover;
+}
+
+.prose-figure--banner img {
+  aspect-ratio: 1024 / 288;
 }
 
 .prose-figure figcaption {
