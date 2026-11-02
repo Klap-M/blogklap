@@ -636,6 +636,13 @@ img.placeholder-cover { object-position: 68% center; }
   color: #fff;
 }
 
+/* .prose p también pisa el blanco del reverso de las tarjetas. */
+.prose .flip-card__back p,
+.prose .flip-card__back .flip-card__title,
+.prose .flip-card__back .flip-card__text {
+  color: #fff;
+}
+
 .article-cta__actions {
   display: flex;
   flex-direction: column;
